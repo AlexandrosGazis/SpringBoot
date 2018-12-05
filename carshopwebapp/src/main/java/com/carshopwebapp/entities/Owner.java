@@ -19,7 +19,7 @@ public class Owner {
     private String kwdikoXristi;
     private String markaOximatos;
     private String pinakidaOximatos;
-    private String tipXristi;
+    private String tipoXristi;
 
     public int getId() {
         return id;
@@ -93,12 +93,12 @@ public class Owner {
         this.pinakidaOximatos = pinakidaOximatos;
     }
 
-    public String getTipXristi() {
-        return tipXristi;
+    public String getTipoXristi() {
+        return tipoXristi;
     }
 
-    public void setTipXristi(String tipXristi) {
-        this.tipXristi = tipXristi;
+    public void setTipoXristi(String tipXristi) {
+        this.tipoXristi = tipXristi;
     }
 
     @Override
@@ -113,7 +113,7 @@ public class Owner {
                 ", kwdikoXristi='" + kwdikoXristi + '\'' +
                 ", markaOximatos='" + markaOximatos + '\'' +
                 ", pinakidaOximatos='" + pinakidaOximatos + '\'' +
-                ", tipXristi='" + tipXristi + '\'' +
+                ", tipXristi='" + tipoXristi + '\'' +
                 '}';
     }
 }
