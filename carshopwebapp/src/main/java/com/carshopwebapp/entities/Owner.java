@@ -1,7 +1,16 @@
 package com.carshopwebapp.entities;
 
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+
+@Entity //map this class to the database
 public class Owner {
+
+    @Id
     private int id;
+    //@Column  if the private name was different from the ones of our db
     private String afm;
     private String onoma;
     private String epitheto;
