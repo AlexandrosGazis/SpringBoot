@@ -5,7 +5,7 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
-    <title>Create Owner</title>
+    <title>Create New Data Entry</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
@@ -29,7 +29,7 @@
 
     Πινακιδα: <input type="text" name="pinakidaOximatos"/>
 
-    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"/>    Rural <input type="radio" name="tipoXristi" value="User"/>
+    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"/>    User <input type="radio" name="tipoXristi" value="User"/>
 
 
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
