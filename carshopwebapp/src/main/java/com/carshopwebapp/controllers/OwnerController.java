@@ -50,4 +50,14 @@ public class OwnerController {
         //send response back via modelmap
         return "displayOwners"; //go back to all Records page
     }
+
+    @RequestMapping("/updateOwner")
+    public String showOwner(@RequestParam("id") int id,ModelMap modelMap) {
+        //model map for when we get back to the jsp
+        Owner owner = service.getOwnerbyId(id);
+        modelMap.addAttribute("owner",owner);
+        return "updateOwner";
+
+    }
+
 }

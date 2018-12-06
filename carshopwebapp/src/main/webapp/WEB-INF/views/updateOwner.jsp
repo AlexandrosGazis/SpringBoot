@@ -17,54 +17,24 @@
 
     </style>
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
-    <title>View all records</title>
+    <title>Update a record</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-
-<h2>Users:</h2>
-<table>
-    <tr>
-        <th>User id</th>
-        <th>ΑΦΜ</th>
-        <th>Ονομα</th>
-        <th>Eπιθετο</th>
-        <th>Διευθυνση</th>
-        <th>Email</th>
-        <th>Μαρκα Οχηματος</th>
-        <th>Πινακιδα Οχηματος</th>
-        <th>Τυπος Χρηστη</th>
-        <th></th>
-
-    </tr>
-
-    <c:forEach items="${owners}" var="owner">
-
-      <tr>
-
-        <td>${owner.id}</td>
-        <td>${owner.afm}</td>
-        <td>${owner.onoma}</td>
-        <td>${owner.epitheto}</td>
-        <td>${owner.dieuthinsi}</td>
-        <td>${owner.email}</td>
-        <td>${owner.markaOximatos}</td>
-        <td>${owner.pinakidaOximatos}</td>
-        <td>${owner.tipoXristi}</td>
-
-          <td><a href="deleteOwner?id=${owner.id}">delete</a></td>
-      </tr>
-    </c:forEach>
-
-
-
-
-
-
-</table>
-<br>
-<a href="showCreate"> Εισαγωγή Νέων Δεδομενων</a>
-
-
+<form action="saveOwn" method="post">
+      <pre>
+    Id:   <input type="text" name="id" value="${owner.id}" readonly="true"/>
+    ΑΦΜ: <input type="text" name="afm"${owner.afm}/>
+    Ονομα: <input type="text" name="onoma${owner.onoma}"/>
+    Επίθετο: <input type="text" name="epitheto"${owner.epitheto}/>
+    Διεύθυνση: <input type="text" name="dieuthinsi"${owner.dieuthinsi}/>
+    Email: <input type="text" name="email"${owner.email}/>
+    Κωδικος: <input type="text" name="kwdikoXristi"${owner.id}/>
+    Μαρκα: <input type="text" name="markaOximatos"${owner.markaOximatos}/>
+    Πινακιδα: <input type="text" name="pinakidaOximatos"${owner.pinakidaOximatos}/>
+    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>/>
+    <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
+    </pre>
+</form>
 </body>
 </html>
