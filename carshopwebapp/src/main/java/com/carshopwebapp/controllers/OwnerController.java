@@ -18,12 +18,17 @@ public class OwnerController {
     @Autowired
     OwnerService service;
 
+        @RequestMapping("/sintelestes")
+        public String contributors() {
+            return "redirect:/sintelestes.html";
+        }
+
+
+
     @RequestMapping("/showCreate")
     public String createNewOwner() {
         return "createOwner.jsp";
     }
-
-
 
 
     @RequestMapping("/saveOwn")
@@ -44,29 +49,29 @@ public class OwnerController {
     }
 
     @RequestMapping("/deleteOwner") //it gets it from the displayOwners.jsp
-    public String deleteOwner(@RequestParam("id") int id,ModelMap modelMap) {
+    public String deleteOwner(@RequestParam("id") int id, ModelMap modelMap) {
         Owner owner = new Owner();
         owner = service.getOwnerbyId(id);//get the owner
         service.deleteOwner(owner); //delete the owner
         List<Owner> owners = service.getAllOwners();
-        modelMap.addAttribute("owners",owners);
+        modelMap.addAttribute("owners", owners);
         //send response back via modelmap
         return "displayOwners.jsp"; //go back to all Records page
     }
 
     @RequestMapping("/showUpdate")
-    public String showOwner(@RequestParam("id") int id,ModelMap modelMap) {
+    public String showOwner(@RequestParam("id") int id, ModelMap modelMap) {
         //model map for when we get back to the jsp
         Owner owner = service.getOwnerbyId(id);
-        modelMap.addAttribute("owner",owner);
+        modelMap.addAttribute("owner", owner);
         return "updateOwner.jsp";
     }
 
     @RequestMapping("/updateOwn") //uri to handle
-    public String updateOwner (@ModelAttribute("owner") Owner owner, ModelMap modelMap){
+    public String updateOwner(@ModelAttribute("owner") Owner owner, ModelMap modelMap) {
         service.updateOwner(owner); // i wont use it so i dont save it somewhere like createOwner
         List<Owner> owners = service.getAllOwners();
-        modelMap.addAttribute("owners",owners);
+        modelMap.addAttribute("owners", owners);
         return "displayOwners.jsp"; //return to all records page
     }
 
