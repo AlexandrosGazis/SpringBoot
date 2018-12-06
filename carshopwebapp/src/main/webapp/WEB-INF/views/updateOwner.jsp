@@ -52,9 +52,7 @@
         <td>${owner.pinakidaOximatos}</td>
         <td>${owner.tipoXristi}</td>
 
-          <td><a href="deleteOwner?id=${owner.id}">Delete</a></td>
-          <td><a href="updateOwner?id=${owner.id}">Update</a></td>
-
+          <td><a href="deleteOwner?id=${owner.id}">delete</a></td>
       </tr>
     </c:forEach>
 
