@@ -51,7 +51,7 @@ public class OwnerController {
         return "displayOwners"; //go back to all Records page
     }
 
-    @RequestMapping("/updateOwner")
+    @RequestMapping("/showUpdate")
     public String showOwner(@RequestParam("id") int id,ModelMap modelMap) {
         //model map for when we get back to the jsp
         Owner owner = service.getOwnerbyId(id);

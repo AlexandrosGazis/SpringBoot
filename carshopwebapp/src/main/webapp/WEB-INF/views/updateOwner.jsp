@@ -24,14 +24,14 @@
 <form action="updateOwn" method="post">
       <pre>
     Id:   <input type="text" name="id" value="${owner.id}" readonly="true"/>
-    ΑΦΜ: <input type="text" name="afm"${owner.afm}/>
-    Ονομα: <input type="text" name="onoma${owner.onoma}"/>
-    Επίθετο: <input type="text" name="epitheto"${owner.epitheto}/>
-    Διεύθυνση: <input type="text" name="dieuthinsi"${owner.dieuthinsi}/>
-    Email: <input type="text" name="email"${owner.email}/>
-    Κωδικος: <input type="text" name="kwdikoXristi"${owner.id}/>
-    Μαρκα: <input type="text" name="markaOximatos"${owner.markaOximatos}/>
-    Πινακιδα: <input type="text" name="pinakidaOximatos"${owner.pinakidaOximatos}/>
+    ΑΦΜ: <input type="text" name="afm"value=${owner.afm}/>
+    Ονομα: <input type="text" name="onoma" value=${owner.onoma}"/>
+    Επίθετο: <input type="text" name="epitheto"value=${owner.epitheto}/>
+    Διεύθυνση: <input type="text" name="dieuthinsi"value=${owner.dieuthinsi}/>
+    Email: <input type="text" name="email"value=${owner.email}/>
+    Κωδικος: <input type="text" name="kwdikoXristi"value=${owner.id}/>
+    Μαρκα: <input type="text" name="markaOximatos"value=${owner.markaOximatos}/>
+    Πινακιδα: <input type="text" name="pinakidaOximatos"value=${owner.pinakidaOximatos}/>
     Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>
    <br>
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
