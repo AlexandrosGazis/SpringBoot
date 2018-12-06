@@ -29,7 +29,7 @@
     Επίθετο: <input type="text" name="epitheto"value=${owner.epitheto}/>
     Διεύθυνση: <input type="text" name="dieuthinsi"value=${owner.dieuthinsi}/>
     Email: <input type="text" name="email"value=${owner.email}/>
-    Κωδικος: <input type="text" name="kwdikoXristi"value=${owner.id}/>
+    Κωδικος: <input type="text" name="kwdikoXristi"value=${owner.kwdikoXristi}/>
     Μαρκα: <input type="text" name="markaOximatos"value=${owner.markaOximatos}/>
     Πινακιδα: <input type="text" name="pinakidaOximatos"value=${owner.pinakidaOximatos}/>
     Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>

@@ -20,15 +20,18 @@ public class OwnerController {
 
     @RequestMapping("/showCreate")
     public String createNewOwner() {
-        return "createOwner";
+        return "createOwner.jsp";
     }
+
+
+
 
     @RequestMapping("/saveOwn")
     public String saveNewOwner(@ModelAttribute("owner") Owner owner, ModelMap modelMap) { //expose it out a as bean -spring container-
         Owner userSaved = service.saveOwner(owner);
         String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + userSaved.getId();
         modelMap.addAttribute("msg", msg);
-        return "createOwner";
+        return "createOwner.jsp";
         //request modelattribute
         //response modelmap (pass key value pairs)
     }
@@ -37,7 +40,7 @@ public class OwnerController {
     public String displayOwners(ModelMap modelMap) {
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners", owners);
-        return "displayOwners";
+        return "displayOwners.jsp";
     }
 
     @RequestMapping("/deleteOwner") //it gets it from the displayOwners.jsp
@@ -48,7 +51,7 @@ public class OwnerController {
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners",owners);
         //send response back via modelmap
-        return "displayOwners"; //go back to all Records page
+        return "displayOwners.jsp"; //go back to all Records page
     }
 
     @RequestMapping("/showUpdate")
@@ -56,7 +59,7 @@ public class OwnerController {
         //model map for when we get back to the jsp
         Owner owner = service.getOwnerbyId(id);
         modelMap.addAttribute("owner",owner);
-        return "updateOwner";
+        return "updateOwner.jsp";
     }
 
     @RequestMapping("/updateOwn") //uri to handle
@@ -64,7 +67,7 @@ public class OwnerController {
         service.updateOwner(owner); // i wont use it so i dont save it somewhere like createOwner
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners",owners);
-        return "displayOwners"; //return to all records page
+        return "displayOwners.jsp"; //return to all records page
     }
 
 
