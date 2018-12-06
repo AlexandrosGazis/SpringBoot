@@ -41,9 +41,13 @@ public class OwnerController {
     }
 
     @RequestMapping("/deleteOwner") //it gets it from the displayOwners.jsp
-    public String deleteOwner(@RequestParam("id") int id) {
-        Owner owner = service.getOwnerbyId(id);//get the owner
-        service.deleteOwner(owner); //delete the owner 
+    public String deleteOwner(@RequestParam("id") int id,ModelMap modelMap) {
+        Owner owner = new Owner();
+        owner = service.getOwnerbyId(id);//get the owner
+        service.deleteOwner(owner); //delete the owner
+        List<Owner> owners = service.getAllOwners();
+        modelMap.addAttribute("owners",owners);
+        //send response back via modelmap
         return "displayOwners"; //go back to all Records page
     }
 }

@@ -25,7 +25,7 @@
 <h2>Users:</h2>
 <table>
     <tr>
-        <th>id</th>
+        <th>User id</th>
         <th>ΑΦΜ</th>
         <th>Ονομα</th>
         <th>Eπιθετο</th>
@@ -34,12 +34,14 @@
         <th>Μαρκα Οχηματος</th>
         <th>Πινακιδα Οχηματος</th>
         <th>Τυπος Χρηστη</th>
-        <th>aaa</th>
+        <th></th>
+
     </tr>
 
-
     <c:forEach items="${owners}" var="owner">
-      <td>
+
+      <tr>
+
         <td>${owner.id}</td>
         <td>${owner.afm}</td>
         <td>${owner.onoma}</td>
@@ -49,9 +51,12 @@
         <td>${owner.markaOximatos}</td>
         <td>${owner.pinakidaOximatos}</td>
         <td>${owner.tipoXristi}</td>
-        <td><a href="deleteOwner?id=${owner.id}">delete</a></td>
+
+          <td><a href="deleteOwner?id=${owner.id}">delete</a></td>
       </tr>
     </c:forEach>
+
+
 
 
 
