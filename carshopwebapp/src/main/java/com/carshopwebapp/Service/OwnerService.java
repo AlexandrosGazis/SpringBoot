@@ -11,6 +11,6 @@ public interface OwnerService {
     Owner updateOwner(Owner owner) ;//update owner
     void deleteOwner(Owner owner); //delete owner
     Owner getOwnerbyId(int id);
-    public List<Owner> getAllOwners();
+    List<Owner> getAllOwners();
 
     }

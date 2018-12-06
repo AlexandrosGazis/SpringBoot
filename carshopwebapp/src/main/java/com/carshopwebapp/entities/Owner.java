@@ -1,25 +1,40 @@
 package com.carshopwebapp.entities;
 
 
+//import javax.persistence.Column;
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 
 @Entity //map this class to the database
+@Table(name = "owneruser")
+
 public class Owner {
 
     @Id
     private int id;
     //@Column  if the private name was different from the ones of our db
+    @Column(name = "afm")
     private String afm;
+    @Column(name = "onoma")
     private String onoma;
+    @Column(name = "epitheto")
     private String epitheto;
+    @Column(name = "dieuthinsi")
     private String dieuthinsi;
+    @Column(name = "email")
     private String email;
+    @Column(name = "kwdikoxristi")
     private String kwdikoXristi;
+    @Column(name = "markaoximatos")
     private String markaOximatos;
+    @Column(name = "pinakidaoximatos")
     private String pinakidaOximatos;
+    @Column(name = "tipoxristi")
     private String tipoXristi;
+
 
     public int getId() {
         return id;
@@ -97,8 +112,8 @@ public class Owner {
         return tipoXristi;
     }
 
-    public void setTipoXristi(String tipXristi) {
-        this.tipoXristi = tipXristi;
+    public void setTipoXristi(String tipoXristi) {
+        this.tipoXristi = tipoXristi;
     }
 
     @Override
@@ -113,7 +128,7 @@ public class Owner {
                 ", kwdikoXristi='" + kwdikoXristi + '\'' +
                 ", markaOximatos='" + markaOximatos + '\'' +
                 ", pinakidaOximatos='" + pinakidaOximatos + '\'' +
-                ", tipXristi='" + tipoXristi + '\'' +
+                ", tipoXristi='" + tipoXristi + '\'' +
                 '}';
     }
 }
