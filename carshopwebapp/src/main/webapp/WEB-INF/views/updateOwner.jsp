@@ -21,7 +21,7 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<form action="saveOwn" method="post">
+<form action="updateOwn" method="post">
       <pre>
     Id:   <input type="text" name="id" value="${owner.id}" readonly="true"/>
     ΑΦΜ: <input type="text" name="afm"${owner.afm}/>
@@ -32,7 +32,8 @@
     Κωδικος: <input type="text" name="kwdikoXristi"${owner.id}/>
     Μαρκα: <input type="text" name="markaOximatos"${owner.markaOximatos}/>
     Πινακιδα: <input type="text" name="pinakidaOximatos"${owner.pinakidaOximatos}/>
-    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>/>
+    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>
+   <br>
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
     </pre>
 </form>

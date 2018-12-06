@@ -57,7 +57,15 @@ public class OwnerController {
         Owner owner = service.getOwnerbyId(id);
         modelMap.addAttribute("owner",owner);
         return "updateOwner";
-
     }
+
+    @RequestMapping("/updateOwn") //uri to handle
+    public String updateOwner (@ModelAttribute("owner") Owner owner, ModelMap modelMap){
+        service.updateOwner(owner); // i wont use it so i dont save it somewhere like createOwner
+        List<Owner> owners = service.getAllOwners();
+        modelMap.addAttribute("owners",owners);
+        return "displayOwners"; //return to all records page
+    }
+
 
 }
