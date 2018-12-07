@@ -7,10 +7,12 @@ import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
+
+@Entity
+@Table(name = "repair")
 public class Repair {
 
-    @Entity
-    @Table(name = "repair")
+
     @Id
     private int id;
     //@Column  if the private name was different from the ones of our db
