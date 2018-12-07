@@ -4,13 +4,15 @@ import com.carshopwebapp.Service.OwnerService;
 import com.carshopwebapp.entities.Owner;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.stereotype.Service;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.util.Arrays;
 import java.util.List;
+
+import static org.springframework.web.bind.annotation.RequestMethod.GET; //delete me i am a test
 
 @Controller
 public class OwnerController {
@@ -18,11 +20,10 @@ public class OwnerController {
     @Autowired
     OwnerService service;
 
-        @RequestMapping("/sintelestes")
-        public String contributors() {
-            return "redirect:/sintelestes.html";
-        }
-
+    @RequestMapping("/sintelestes")
+    public String contributors() {
+        return "redirect:/sintelestes.html";
+    }
 
 
     @RequestMapping("/showCreate")
