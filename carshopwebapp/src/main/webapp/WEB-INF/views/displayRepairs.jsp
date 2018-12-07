@@ -48,9 +48,9 @@
         <td>${repair.owner}</td>
         <td>${repair.perigrafi}</td>
 
-          
+
           <td><a href="deleteRepair?id=${repair.id}">Delete</a></td>
-          <td><a href="showRepair?id=${repair.id}">Update</a></td>
+          <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
 
       </tr>
     </c:forEach>

@@ -12,10 +12,10 @@
 <form action="saveRepair" method="post">
       <pre>
     Id:   <input type="text" name="id"/>
-    Ημερομηνία: <input type="text" name="date"/>
+    Ημερομηνία(YYYY-MM-DD): <input type="text" name="date"/>
     Κατάσταση: <input type="text" name="katastasi"/>
     Είδος επισκευής: Μικρή <input type="radio" name="eidosepiskeuis" value="Μικρη"/>    Μεγάλη <input type="radio" name="eidosepiskeuis" value="Μεγάλη"/>
-    Κόστος: <input type="text" name="kostos"/>
+    Κόστος(dot separated): <input type="text" name="kostos"/>
     Χρηστης: <input type="text" name="owner"/>
     Περιγραφή: <input type="text" name="perigrafi"/>
 
