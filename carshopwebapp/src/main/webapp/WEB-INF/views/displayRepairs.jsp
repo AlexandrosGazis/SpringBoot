@@ -61,7 +61,7 @@
 
 </table>
 <br>
-<a href="showCreate"> Εισαγωγή Νέων Δεδομενων</a>
+<a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων</a>
 
 
 </body>
