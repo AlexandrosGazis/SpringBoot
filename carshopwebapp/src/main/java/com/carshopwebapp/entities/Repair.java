@@ -34,5 +34,74 @@ public class Repair {
 
     @Column(name="perigrafi")
     private String perigrafi;
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
+
+    public String getKatastasi() {
+        return katastasi;
+    }
+
+    public void setKatastasi(String katastasi) {
+        this.katastasi = katastasi;
+    }
+
+    public String getEidosepiskeuis() {
+        return eidosepiskeuis;
+    }
+
+    public void setEidosepiskeuis(String eidosepiskeuis) {
+        this.eidosepiskeuis = eidosepiskeuis;
+    }
+
+    public double getKostos() {
+        return kostos;
+    }
+
+    public void setKostos(double kostos) {
+        this.kostos = kostos;
+    }
+
+    public String getOwner() {
+        return owner;
+    }
+
+    public void setOwner(String owner) {
+        this.owner = owner;
+    }
+
+    public String getPerigrafi() {
+        return perigrafi;
+    }
+
+    public void setPerigrafi(String perigrafi) {
+        this.perigrafi = perigrafi;
+    }
+
+    @Override
+    public String toString() {
+        return "Repair{" +
+                "id=" + id +
+                ", date='" + date + '\'' +
+                ", katastasi='" + katastasi + '\'' +
+                ", eidosepiskeuis='" + eidosepiskeuis + '\'' +
+                ", kostos=" + kostos +
+                ", owner='" + owner + '\'' +
+                ", perigrafi='" + perigrafi + '\'' +
+                '}';
+    }
 }
 
