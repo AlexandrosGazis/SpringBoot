@@ -5,22 +5,20 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
-    <title>Create New Data Entry-User</title>
+    <title>Create New Data Entry-Repair</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 <form action="saveOwn" method="post">
       <pre>
     Id:   <input type="text" name="id"/>
-    ΑΦΜ: <input type="text" name="afm"/>
-    Ονομα: <input type="text" name="onoma"/>
-    Επίθετο: <input type="text" name="epitheto"/>
-    Διεύθυνση: <input type="text" name="dieuthinsi"/>
-    Email: <input type="text" name="email"/>
-    Κωδικος: <input type="text" name="kwdikoXristi"/>
-    Μαρκα: <input type="text" name="markaOximatos"/>
-    Πινακιδα: <input type="text" name="pinakidaOximatos"/>
-    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"/>    User <input type="radio" name="tipoXristi" value="User"/>
+    Ημερομηνία: <input type="text" name="date"/>
+    Κατάσταση: <input type="text" name="katastasi"/>
+    Είδος επισκευής: Μικρή <input type="radio" name="eidosepiskeuis" value="Μικρη"/>    Μεγάλη <input type="radio" name="eidosepiskeuis" value="Μεγάλη"/>
+    Κόστος: <input type="text" name="kostos"/>
+    Χρηστης: <input type="text" name="owner"/>
+    Περιγραφή: <input type="text" name="perigrafi"/>
+
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
     </pre>
 </form>

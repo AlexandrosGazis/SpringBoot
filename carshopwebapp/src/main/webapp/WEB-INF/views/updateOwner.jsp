@@ -17,7 +17,7 @@
 
     </style>
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
-    <title>Update a record</title>
+    <title>Update a record(Owners)</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
