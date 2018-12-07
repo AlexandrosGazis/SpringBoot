@@ -1,6 +1,5 @@
 package com.carshopwebapp.repository;
 
-import com.carshopwebapp.entities.Owner;
 import com.carshopwebapp.entities.Repair;
 import org.springframework.data.jpa.repository.JpaRepository;
 

@@ -1,15 +1,17 @@
 package com.carshopwebapp.Service;
 
 import com.carshopwebapp.entities.Owner;
+import com.carshopwebapp.entities.Repair;
 
 import java.util.List;
 
 public interface RepairService {
-    //save,update,delete, get location by id
+    //save,update,delete, get  by id
 
-    //new repair
-   //update repair
-    //delete repair
-
+    Repair saveRepair(Repair repair);//new repair
+    Repair updateRepair(Repair repair); //update repair
+    void deleteRepair(Repair repair);//delete repair
+    Repair getRepairbyId(int id);
+    List<Repair> getAllRepairs();
 
     }
