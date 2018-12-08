@@ -15,7 +15,6 @@ public class UserController {
     private final Logger logger = LoggerFactory.getLogger(UserController.class);
 
 
-
     @Controller
     @RequestMapping("/register")
     public class UserRegistrationController {
@@ -24,14 +23,14 @@ public class UserController {
         private UserService userService;
 
         @RequestMapping(method = RequestMethod.GET)
-        public String handleGetRequest () {
-           logger.info("ok bika 2(from deriect gimme the form file");
+        public String handleGetRequest() {
+            logger.info("ok bika 2(from deriect gimme the form file");
 
             return "user-registration.jsp";
         }
 
         @RequestMapping(method = RequestMethod.POST)
-        public String handlePostRequest (User user, Model model) {
+        public String handlePostRequest(User user, Model model) {
             userService.saveUser(user);
             return "registration-done.jsp";
         }

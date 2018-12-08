@@ -15,7 +15,7 @@ public class UserServiceImpl implements UserService {
     private Map<Long, User> userMap = new HashMap<>();
 
     @Override
-    public void saveUser (User user) {
+    public void saveUser(User user) {
         if (user.getId() == null) {
             user.setId((long) (userMap.size() + 1));
         }
@@ -24,5 +24,4 @@ public class UserServiceImpl implements UserService {
     }
 }
 //|I shall here search afm,pinakida, date
-//https://www.logicbig.com/tutorials/spring-framework/spring-web-mvc/spring-mvc-form-submission.html
 

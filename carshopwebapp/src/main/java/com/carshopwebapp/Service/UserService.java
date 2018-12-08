@@ -5,6 +5,6 @@ import com.carshopwebapp.entities.User;
 public interface UserService {
 
 
-        void saveUser(User user);
-    }
+    void saveUser(User user);
+}
 
