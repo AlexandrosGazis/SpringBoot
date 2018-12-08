@@ -14,7 +14,9 @@ import javax.persistence.Table;
 public class Owner {
 
     @Id
+
     private int id;
+
     //@Column  if the private name was different from the ones of our db
     @Column(name = "afm")
     private String afm;
