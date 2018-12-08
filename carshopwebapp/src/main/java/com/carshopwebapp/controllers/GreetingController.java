@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.*;
 import com.carshopwebapp.entities.Greeting;
 
@@ -55,9 +56,10 @@ public class GreetingController {
     }
 
     @PostMapping("/greeting")
-    public String greetingSubmit(@ModelAttribute Greeting greeting) {
+    public String greetingSubmit(@ModelAttribute("greeting") Greeting greeting, ModelMap modelMap) {
         logger.info("Επιτυχης εισαγωγη δεδομενων 33");
-        return "result.html";
+        modelMap.addAttribute("greeting", greeting);
+        return "redirect:/index.html";
     }
 
 
