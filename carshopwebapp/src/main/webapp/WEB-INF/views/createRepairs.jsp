@@ -24,7 +24,12 @@
 </form>
 ${msg}
 <br>
-<a href="displayRepairs">View All Data!</a>
+<a href="/"> Πισω στην αρχικη σελιδα</a> <br>
+<a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repair</a><br>
+<a href="showCreate"> Εισαγωγή Νέων Δεδομενων-Owners</a><br>
+<a href="displayOwners">View All Data!-Owners</a><br>
+<a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repairs</a><br>
+
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 </body>
