@@ -1,6 +1,7 @@
 package com.carshopwebapp.controllers;
 
 import com.carshopwebapp.Service.UserService;
+import com.carshopwebapp.entities.Repair;
 import com.carshopwebapp.entities.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -24,15 +25,25 @@ public class UserController {
 
         @RequestMapping(method = RequestMethod.GET)
         public String handleGetRequest() {
-            logger.info("ok bika 2(from deriect gimme the form file");
+            logger.info("ok bika ");
 
             return "user-registration.jsp";
         }
 
         @RequestMapping(method = RequestMethod.POST)
-        public String handlePostRequest(User user, Model model) {
+        public String handlePostRequest(User user, Model model, Repair repair) {
             userService.saveUser(user);
+            if (userService.validUser(user) == true) {  // Ebale stoixeia pou uparxoyn ston pinaka
+                logger.info("ELAAAAAAAA ok bikaaaaaaaaaaaaaaaa 1(from deriect gimme the form file)");
+            }
+            logger.info("bbbbbbbbbbbbbbbbbbbbbb bikaaaaaaaaaaaaaaaa 2(from deriect gimme the form file");
+
+            // allios epistrefei sto registration page me minima lathos stoixeion
+            //return "user-registration.jsp";
             return "registration-done.jsp";
         }
+
+
+
     }
 }

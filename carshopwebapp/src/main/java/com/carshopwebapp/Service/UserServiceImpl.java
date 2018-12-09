@@ -22,6 +22,11 @@ public class UserServiceImpl implements UserService {
         userMap.put(user.getId(), user);
 
     }
+
+    @Override
+    public boolean validUser(User user) {
+        return false;
+    }
 }
 //|I shall here search afm,pinakida, date
 

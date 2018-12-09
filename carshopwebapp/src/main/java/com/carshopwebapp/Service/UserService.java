@@ -6,5 +6,6 @@ public interface UserService {
 
 
     void saveUser(User user);
+    boolean validUser(User user);
 }
 
