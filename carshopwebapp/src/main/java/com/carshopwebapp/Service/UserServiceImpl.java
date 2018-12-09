@@ -12,6 +12,11 @@ import java.util.Map;
 @Service //service layer class-bean
 public class UserServiceImpl implements UserService {
     //this class will have the following methods: SAVE, UPDATE, DELETE
+
+
+    @Autowired
+    private OwnerService repository1;
+
     private Map<Long, User> userMap = new HashMap<>();
 
     @Override
@@ -25,7 +30,13 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public boolean validUser(User user) {
-        return false;
+        if (user.getAfm().equals(repository1.getAllOwners()) && user.getEmailAddress().equals(repository1.getAllOwners())) {
+
+            return true;
+        }
+        else
+            return false;
+
     }
 }
 //|I shall here search afm,pinakida, date
