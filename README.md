@@ -5,6 +5,7 @@ The aim of this repository is to learn **Spring Boot** and develop a CRUD applic
 
 After importing the project, setting up your database (sql dump file is located in _VariousFiles_ folder) and fire up your server (tomcat) click the following:
 
+
 ## [Index Page](http://localhost:8000/carshopwebapp/) 
 
 The index page consists of the following:
