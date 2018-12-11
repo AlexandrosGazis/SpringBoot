@@ -37,7 +37,7 @@ public class DiagramGewrgios2d {
         List<Repair> repairs = service.getAllRepairs();
         modelMap.addAttribute("repairs", repairs);
         return "RepairUpdatePage.jsp";
-    }
+    }// ADD delete option
 
 
     @RequestMapping("/OwnerPages")
@@ -50,7 +50,7 @@ public class DiagramGewrgios2d {
         List<Owner> owners = serviceOwn.getAllOwners();
         modelMap.addAttribute("owners", owners);
         return "OwnerUpdatePage.jsp";
-    }
+    }//ADD delete option
 
 
 
