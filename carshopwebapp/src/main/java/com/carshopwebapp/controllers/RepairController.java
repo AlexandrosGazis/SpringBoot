@@ -26,11 +26,24 @@ public class RepairController {
 
 
 
+    @RequestMapping("/RepairPage")
+    public String repairOptins() {
+        return "RepairPage.jsp";
+    }
+
+    @RequestMapping("/RepairUpdatePage")
+    public String repairOptionUpdate(ModelMap modelMap) {
+        List<Repair> repairs = service.getAllRepairs();
+        modelMap.addAttribute("repairs", repairs);
+        return "RepairUpdatePage.jsp";
+    }
+
+
+
     @RequestMapping("/showCreateRepair")
     public String createNewRepair() {
         return "createRepairs.jsp";
     }
-
 
     @RequestMapping("/saveRepair")
     public String saveNewRepair(@ModelAttribute("repair") Repair repair, ModelMap modelMap) { //expose it out a as bean -spring container-

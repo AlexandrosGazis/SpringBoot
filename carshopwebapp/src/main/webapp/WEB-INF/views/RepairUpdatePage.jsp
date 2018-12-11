@@ -38,21 +38,20 @@
 
     <c:forEach items="${repairs}" var="repair">
 
-      <tr>
+        <tr>
 
-        <td>${repair.id}</td>
-        <td>${repair.date}</td>
-        <td>${repair.katastasi}</td>
-        <td>${repair.eidosepiskeuis}</td>
-        <td>${repair.kostos}</td>
-        <td>${repair.owner}</td>
-        <td>${repair.perigrafi}</td>
+            <td>${repair.id}</td>
+            <td>${repair.date}</td>
+            <td>${repair.katastasi}</td>
+            <td>${repair.eidosepiskeuis}</td>
+            <td>${repair.kostos}</td>
+            <td>${repair.owner}</td>
+            <td>${repair.perigrafi}</td>
 
 
-          <td><a href="deleteRepair?id=${repair.id}">Delete</a></td>
-          <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
+            <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
 
-      </tr>
+        </tr>
     </c:forEach>
 
 

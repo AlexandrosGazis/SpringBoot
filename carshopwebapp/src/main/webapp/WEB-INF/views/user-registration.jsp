@@ -17,7 +17,7 @@
     <a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repair</a><br>
     <a href="showCreate"> Εισαγωγή Νέων Δεδομενων-Owners</a><br>
     <a href="displayOwners">View All Data!-Owners</a><br>
-    <a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repairs</a><br>
+    <a href="displayRepairs"> View All Data!-Owners-Repairs</a><br>
 
 
 

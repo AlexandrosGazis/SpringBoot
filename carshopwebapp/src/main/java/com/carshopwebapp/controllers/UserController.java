@@ -4,7 +4,6 @@ import com.carshopwebapp.Service.UserService;
 import com.carshopwebapp.entities.Owner;
 import com.carshopwebapp.entities.Repair;
 import com.carshopwebapp.entities.User;
-import com.sun.org.apache.xerces.internal.xs.StringList;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,10 +47,10 @@ public class UserController {
             alekos3.add(ownerValues.getEmail());
             alekos4.add(userValues.getEmailAddress());
 
-
             userService.saveUser(user);
             if (!userService.validUser(user) == true) {  // Ebale stoixeia pou uparxoyn ston pinaka
                 logger.info("ELAAAAAAAA ok bikaaaaaaaaaaaaaaaa 1(from deriect gimme the form file)");
+
             }
             logger.info("bbbbbbbbbbbbbbbbbbbbbb bikaaaaaaaaaaaaaaaa 2(from deriect gimme the form file");
 
