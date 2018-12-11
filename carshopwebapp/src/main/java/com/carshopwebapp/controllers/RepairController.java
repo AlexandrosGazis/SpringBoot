@@ -17,10 +17,6 @@ public class RepairController {
     @Autowired
     RepairService service;
 
-    @RequestMapping("/")
-    public String startPage() {
-        return "redirect:/index.html";
-    }
 
 
 

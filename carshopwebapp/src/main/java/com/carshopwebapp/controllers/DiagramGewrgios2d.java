@@ -21,8 +21,13 @@ public class DiagramGewrgios2d {
     OwnerService serviceOwn;
 
 
+    @RequestMapping("/")
+    public String startPage() {
+        return "redirect:/index2.html";
+    }
 
-    @RequestMapping("/RepairPage")
+
+    @RequestMapping("/RepairPages")
     public String repairOptins() {
         return "RepairPage.jsp";
     }
@@ -40,7 +45,7 @@ public class DiagramGewrgios2d {
         return "OwnerPage.jsp";
     }
 
-    @RequestMapping("/RepairUpdatePages")
+    @RequestMapping("/OwnerUpdatePage")
     public String ownerOptionUpdate(ModelMap modelMap) {
         List<Owner> owners = serviceOwn.getAllOwners();
         modelMap.addAttribute("owners", owners);
