@@ -17,40 +17,42 @@
 
     </style>
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
-    <title>View all Repair records</title>
+    <title>View all Owner records</title>
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
 
-<h2>Repairs:</h2>
+<h2>Users:</h2>
 <table>
     <tr>
-        <th>Repair id</th>
-        <th>Ημερομηνία</th>
-        <th>Κατάσταση</th>
-        <th>Είδος επισκευής</th>
-        <th>Κόστος</th>
-        <th>Owner(service)</th>
-        <th>Περιγραφή</th>
+        <th>User id</th>
+        <th>ΑΦΜ</th>
+        <th>Ονομα</th>
+        <th>Eπιθετο</th>
+        <th>Διευθυνση</th>
+        <th>Email</th>
+        <th>Μαρκα Οχηματος</th>
+        <th>Πινακιδα Οχηματος</th>
+        <th>Τυπος Χρηστη</th>
         <th></th>
 
     </tr>
 
-    <c:forEach items="${repairs}" var="repair">
+    <c:forEach items="${owners}" var="owner">
 
       <tr>
 
-        <td>${repair.id}</td>
-        <td>${repair.date}</td>
-        <td>${repair.katastasi}</td>
-        <td>${repair.eidosepiskeuis}</td>
-        <td>${repair.kostos}</td>
-        <td>${repair.owner}</td>
-        <td>${repair.perigrafi}</td>
+        <td>${owner.id}</td>
+        <td>${owner.afm}</td>
+        <td>${owner.onoma}</td>
+        <td>${owner.epitheto}</td>
+        <td>${owner.dieuthinsi}</td>
+        <td>${owner.email}</td>
+        <td>${owner.markaOximatos}</td>
+        <td>${owner.pinakidaOximatos}</td>
+        <td>${owner.tipoXristi}</td>
 
-
-          <td><a href="deleteRepair?id=${repair.id}">Delete</a></td>
-          <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
+          <td><a href="showUpdate?id=${owner.id}">Update</a></td>
 
       </tr>
     </c:forEach>

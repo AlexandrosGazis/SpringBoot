@@ -3,19 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="54683fe6-55f4-41ba-bb19-bc4fe290900d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../SpringBoot" beforeDir="false" afterPath="$PROJECT_DIR$/../SpringBoot" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/java/com/carshopwebapp/controllers/RepairController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/java/com/carshopwebapp/controllers/RepairController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/java/com/carshopwebapp/controllers/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/java/com/carshopwebapp/controllers/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/createOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/createOwner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/createRepairs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/createRepairs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/displayOwners.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/displayOwners.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/displayRepairs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/displayRepairs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/registration-done.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/registration-done.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/static/css/main.css" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/static/js/main.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/templates/form.ftl" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/updateOwner.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/updateOwner.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/updateRepairs.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/updateRepairs.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/user-registration.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../carshopwebapp/src/main/webapp/WEB-INF/views/user-registration.jsp" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -118,6 +105,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />

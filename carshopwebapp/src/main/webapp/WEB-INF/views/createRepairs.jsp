@@ -28,7 +28,7 @@ ${msg}
 <a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repair</a><br>
 <a href="showCreate"> Εισαγωγή Νέων Δεδομενων-Owners</a><br>
 <a href="displayOwners">View All Data!-Owners</a><br>
-<a href="displayRepairs"> View All Data!-Owners-Repairs</a><br>
+<a href="displayRepairs"> View All Data!-Repairs</a><br>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
