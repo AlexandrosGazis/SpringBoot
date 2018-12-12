@@ -64,11 +64,9 @@
 
 </table>
 <br>
-<a href="index.html"> Πισω στην αρχικη σελιδα</a> <br>
-<a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repair</a><br>
-<a href="showCreate"> Εισαγωγή Νέων Δεδομενων-Owners</a><br>
-<a href="displayOwners">View All Data!-Owners</a><br>
-<a href="displayRepairs"> View All Data!-Repairs</a><br>
+<a href="index2.html"> Aρχικη σελιδα</a> <br>
+<a href="RepairPages"> Repair Page Επιλογες</a><br>
+<a href="OwnerPages"> Οwner Page Επιλογες</a><br>
 
 
 
