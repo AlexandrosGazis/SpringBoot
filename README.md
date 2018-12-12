@@ -10,16 +10,22 @@ After importing the project, setting up your database (sql dump file is located 
 
 The index page consists of the following:
 
-### Contributors page
-* [Display All Contributors](http://localhost:8000/carshopwebapp/sintelestes) 
+-Contributors page
 
-### User/Owner of a Car page
-* [Create New User Entry](http://localhost:8000/carshopwebapp/showCreate)
-* [Display All Entries](http://localhost:8000/carshopwebapp/displayOwners)
-* [Update an Entry-e.g. id=1](http://localhost:8000/carshopwebapp/showUpdate?id=1 )
+-Display All Contributorsoption,  
 
+-User/Owner of a Car page
 
-### Car Repair Shop page 
-* [Create New Repair Entry](http://localhost:8000/carshopwebapp/showCreateRepair)
-* [Display All Entries](http://localhost:8000/carshopwebapp/displayRepairs)
-* [Update an Entry-e.g. id=5](http://localhost:8000/carshopwebapp/showUpdateRepair?id=5)
+	a. Create New User Entry
+
+	b. Display All Entries
+
+	c. Update/Delete an Entry
+
+-Car Repair Shop page 
+
+	a. Create New Repair Entry
+	
+	b. Display All Entries
+	
+	c. Update/Delete an Entry
