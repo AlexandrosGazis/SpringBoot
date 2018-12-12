@@ -14,5 +14,6 @@ public interface OwnerService {
     List<Owner> getAllOwners();
 
 
+
     //
     }

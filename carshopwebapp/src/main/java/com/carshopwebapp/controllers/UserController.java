@@ -34,6 +34,7 @@ public class UserController {
             return "user-registration.jsp";
         }
 
+        //Anagnwstakis Pragmata diafora trela
         @RequestMapping(method = RequestMethod.POST)
         public String handlePostRequest(User user, Model model, Repair repair) {
             User userValues = new User();

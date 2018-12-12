@@ -4,6 +4,7 @@ package com.carshopwebapp.Service;
 import com.carshopwebapp.repository.OwnerRepository;
 import com.carshopwebapp.entities.Owner;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -49,7 +50,6 @@ public class OwnerServiceImpl implements OwnerService {
         return repository.findAll();
         //changed OnwnerRepository to .org.spring.Jpa from crud in order to return a list and not an iterable
     }
-
 
 
 
