@@ -29,7 +29,7 @@ public class RepairController {
     public String repairOptionUpdate(ModelMap modelMap) {
         List<Repair> repairs = service.getAllRepairs();
         modelMap.addAttribute("repairs", repairs);
-        return "RepairUpdatePage.jsp";
+        return "RepairUpdatePage";
     }// ADD delete option
 
     @RequestMapping("/showCreateRepair")
