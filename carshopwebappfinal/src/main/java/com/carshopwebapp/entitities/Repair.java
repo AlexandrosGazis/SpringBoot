@@ -93,12 +93,12 @@ public class Repair {
     public String toString() {
         return "Repair{" +
                 "id=" + id +
-                ", date='" + date + '\'' +
-                ", katastasi='" + katastasi + '\'' +
-                ", eidosepiskeuis='" + eidosepiskeuis + '\'' +
+                ", date=" + date +
+                ", katastasi=" + katastasi +
+                ", eidosepiskeuis=" + eidosepiskeuis +
                 ", kostos=" + kostos +
-                ", owner='" + owner + '\'' +
-                ", perigrafi='" + perigrafi + '\'' +
+                ", owner=" + owner +
+                ", perigrafi=" + perigrafi  +
                 '}';
     }
 }

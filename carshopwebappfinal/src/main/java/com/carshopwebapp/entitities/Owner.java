@@ -118,15 +118,15 @@ public class Owner {
     public String toString() {
         return "Owner{" +
                 "id=" + id +
-                ", afm='" + afm + '\'' +
-                ", onoma='" + onoma + '\'' +
-                ", epitheto='" + epitheto + '\'' +
-                ", dieuthinsi='" + dieuthinsi + '\'' +
-                ", email='" + email + '\'' +
-                ", kwdikoXristi='" + kwdikoXristi + '\'' +
-                ", markaOximatos='" + markaOximatos + '\'' +
-                ", pinakidaOximatos='" + pinakidaOximatos + '\'' +
-                ", tipoXristi='" + tipoXristi + '\'' +
+                ", afm='" + afm +
+                ", onoma='" + onoma +
+                ", epitheto='" + epitheto +
+                ", dieuthinsi='" + dieuthinsi +
+                ", email='" + email +
+                ", kwdikoXristi='" + kwdikoXristi +
+                ", markaOximatos='" + markaOximatos +
+                ", pinakidaOximatos='" + pinakidaOximatos +
+                ", tipoXristi='" + tipoXristi +
                 '}';
     }
 }

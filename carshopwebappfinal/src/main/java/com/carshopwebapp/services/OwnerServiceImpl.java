@@ -53,4 +53,13 @@ public class OwnerServiceImpl implements OwnerService {
     public List<Owner> getOwnersBySurname(String surname) {
         return repository.findByEpitheto(surname);
     }
+    @Override
+    public List<Owner> getOwnersByAfm(String afm) {
+        return repository.findOwnersByAfm(afm);
+    }
+    @Override
+    public List<Owner> getOwnersByEmail(String email) {
+        return repository.findwnersByEmail(email);
+    }
+
 }
