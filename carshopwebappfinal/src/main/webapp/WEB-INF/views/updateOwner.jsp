@@ -2,6 +2,9 @@
          pageEncoding="UTF-8" %>
 
 <%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
+<% pageContext.setAttribute("extaXaraktirasDeleteApoEgrrafesTisDabaseMas", "/"); %>
+
 <%@page isELIgnored="false"%>
 
 <!DOCTYPE html >
@@ -57,6 +60,7 @@
     Μαρκα: <input type="text" name="markaOximatos"value=${owner.markaOximatos}/>
     Πινακιδα: <input type="text" name="pinakidaOximatos"value=${owner.pinakidaOximatos}/>
     Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>
+
 
           <br>
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
