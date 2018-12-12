@@ -1,7 +1,7 @@
 package com.carshopwebapp.controllers;
 
 
-import com.carshopwebapp.entitites.Owner;
+import com.carshopwebapp.entitities.Owner;
 import com.carshopwebapp.services.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

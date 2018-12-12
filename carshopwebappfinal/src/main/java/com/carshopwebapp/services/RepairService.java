@@ -1,5 +1,7 @@
 package com.carshopwebapp.services;
 
+import com.carshopwebapp.entitities.Repair;
+
 import java.util.List;
 
 public interface RepairService {

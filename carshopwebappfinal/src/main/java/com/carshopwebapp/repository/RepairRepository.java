@@ -1,5 +1,6 @@
 package com.carshopwebapp.repository;
 
+import com.carshopwebapp.entitities.Repair;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface RepairRepository extends JpaRepository<Repair, Integer> {

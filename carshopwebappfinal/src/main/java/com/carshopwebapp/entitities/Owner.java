@@ -1,4 +1,4 @@
-package com.carshopwebapp.entitites;
+package com.carshopwebapp.entitities;
 
 
 import javax.persistence.Column;

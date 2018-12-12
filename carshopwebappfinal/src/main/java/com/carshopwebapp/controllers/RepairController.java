@@ -1,7 +1,7 @@
 package com.carshopwebapp.controllers;
 
 
-import com.carshopwebapp.entitites.Repair;
+import com.carshopwebapp.entitities.Repair;
 import com.carshopwebapp.services.RepairService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

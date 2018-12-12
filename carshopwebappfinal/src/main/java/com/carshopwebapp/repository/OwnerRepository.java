@@ -1,5 +1,7 @@
 package com.carshopwebapp.repository;
 
+
+import com.carshopwebapp.entitities.Owner;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 public interface OwnerRepository extends JpaRepository<Owner, Integer> {

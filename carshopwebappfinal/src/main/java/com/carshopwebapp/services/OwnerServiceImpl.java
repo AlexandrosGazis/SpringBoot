@@ -1,6 +1,7 @@
 package com.carshopwebapp.services;
 
 
+import com.carshopwebapp.entitities.Owner;
 import com.carshopwebapp.repository.OwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

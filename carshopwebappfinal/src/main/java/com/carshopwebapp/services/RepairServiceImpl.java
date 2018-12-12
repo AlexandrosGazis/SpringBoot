@@ -1,5 +1,6 @@
 package com.carshopwebapp.services;
 
+import com.carshopwebapp.entitities.Repair;
 import com.carshopwebapp.repository.RepairRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -47,3 +48,4 @@ public class RepairServiceImpl implements RepairService {
     public List<Repair> getAllRepairs() {
         return repository2.findAll();
     }
+}
