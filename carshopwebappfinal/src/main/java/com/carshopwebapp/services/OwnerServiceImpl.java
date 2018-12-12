@@ -59,7 +59,7 @@ public class OwnerServiceImpl implements OwnerService {
     }
     @Override
     public List<Owner> getOwnersByEmail(String email) {
-        return repository.findwnersByEmail(email);
+        return repository.findOwnersByEmail(email);
     }
 
 }

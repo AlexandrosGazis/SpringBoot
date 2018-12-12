@@ -12,7 +12,7 @@ public interface OwnerRepository extends JpaRepository<Owner, Integer> {
 
     List<Owner>  findByEpitheto(String epitheto);
     List<Owner> findOwnersByAfm(String afm) ;
-    List<Owner> findwnersByEmail(String email) ;
+    List<Owner> findOwnersByEmail(String email) ;
 
 
 }
