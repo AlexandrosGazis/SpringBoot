@@ -12,7 +12,7 @@ The index page consists of the following:
 
 -Contributors page
 
--Display All Contributorsoption,  
+-Display All Contributors
 
 -User/Owner of a Car page
 
