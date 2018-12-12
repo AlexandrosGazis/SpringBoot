@@ -68,7 +68,7 @@
 </form>
 
 <button class="favorite styled"  type="button">
-<a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a><
+<a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a>
 </button>
 
 <br>

@@ -41,44 +41,6 @@ public class OwnerContoller {
     }
 
 
-    @RequestMapping("/search")//epitheto
-    public String search(Model model, @RequestParam (name = "epitheto") String surname)
-    {
-        model.addAttribute("owners", service.getOwnersBySurname(surname));
-        return "registration-done";
-        //String a= "registration-done"+;
-      //  return a;
-    }
-
-    @RequestMapping("/search2")//afm
-    public String search2(Model model, @RequestParam (name = "afm") String afm)
-    {
-        model.addAttribute("owners", service.getOwnersByAfm(afm));
-        return "registration-done";
-        //String a= "registration-done"+;
-        //  return a;
-    }
-
-    @RequestMapping("/search3")//email
-    public String search3(Model model, @RequestParam (name = "email") String email)
-    {
-        model.addAttribute("owners", service.getOwnersByEmail(email));
-        return "registration-done";
-        //String a= "registration-done"+;
-        //  return a;
-    }
-
-
-    //http://localhost:8000/carshopwebapp/search?epitheto=Papakis
-
-
-
-
-
-
-
-
-
     @RequestMapping("/saveOwn")
     public String saveNewOwner(@ModelAttribute("owner") Owner owner, ModelMap modelMap) { //expose it out a as bean -spring container-
         Owner userSaved = service.saveOwner(owner);

@@ -1,0 +1,57 @@
+html {
+  font-size: 10px;
+  background: url(https://wallbox.ru/resize/960x854/wallpapers/main/201328/gradient-shum-oboina-23a6562.jpg); 
+  background-size: cover;
+}
+body,html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+p{
+  font-size: 20px;
+  color: #A52A2A;
+}
+
+.button{
+  margin-top: 25px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: rgb(38, 50, 88);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+
+
+#grid{
+  margin-top: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  width:  650px;
+  height:  650px;
+  border: 1px solid black;
+  display: table;
+  table-layout: fixed;
+
+}
+  
+  
+
+  
+div.a{
+  border: 1px solid grey;
+  display: table-cell;
+}
+
+
+.line-break {
+  display: table-row;
+  height: 0.0001%;
+}
