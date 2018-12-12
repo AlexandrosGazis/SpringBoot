@@ -21,7 +21,7 @@ public class RepairController {
 
     @RequestMapping("/RepairPages")
     public String repairOptins() {
-        return "RepairPage.jsp";
+        return "RepairPage";
     }
 
 
@@ -34,7 +34,7 @@ public class RepairController {
 
     @RequestMapping("/showCreateRepair")
     public String createNewRepair() {
-        return "createRepairs.jsp";
+        return "createRepairs";
     }
 
 
@@ -43,7 +43,7 @@ public class RepairController {
         Repair repairSaved = service.saveRepair(repair);
         String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + repairSaved.getId();
         modelMap.addAttribute("msg", msg);
-        return "createRepairs.jsp";//request modelattribute//response modelmap (pass key value pairs)
+        return "createRepairs";//request modelattribute//response modelmap (pass key value pairs)
     }
 
 
@@ -52,7 +52,7 @@ public class RepairController {
         //model map for when we get back to the jsp
         Repair repair = service.getRepairbyId(id);
         modelMap.addAttribute("repair", repair);
-        return "updateRepairs.jsp";
+        return "updateRepairs";
     }
 
 
@@ -61,6 +61,6 @@ public class RepairController {
         service.updateRepair(repair); // i wont use it so i dont save it somewhere like createRepair
         List<Repair> repairs = service.getAllRepairs();
         modelMap.addAttribute("repairs", repairs);
-        return "RepairUpdatePage.jsp"; //return to all records page
+        return "RepairUpdatePage"; //return to all records page
     }
 }

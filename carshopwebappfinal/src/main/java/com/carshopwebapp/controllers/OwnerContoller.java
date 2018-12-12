@@ -21,7 +21,7 @@ public class OwnerContoller {
 
     @RequestMapping("/OwnerPages")
     public String ownerOptins() {
-        return "OwnerPage.jsp";
+        return "OwnerPage";
     }
 
 
@@ -29,13 +29,13 @@ public class OwnerContoller {
     public String ownerOptionUpdate(ModelMap modelMap) {
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners", owners);
-        return "OwnerUpdatePage.jsp";
+        return "OwnerUpdatePage";
     }//ADD delete option
 
 
     @RequestMapping("/showCreate")
     public String createNewOwner() {
-        return "createOwner.jsp";
+        return "createOwner";
     }
 
 
@@ -44,7 +44,7 @@ public class OwnerContoller {
         Owner userSaved = service.saveOwner(owner);
         String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + userSaved.getId();
         modelMap.addAttribute("msg", msg);
-        return "createOwner.jsp";  //request modelattribute        //response modelmap (pass key value pairs)
+        return "createOwner";  //request modelattribute        //response modelmap (pass key value pairs)
     }
 
 
@@ -53,7 +53,7 @@ public class OwnerContoller {
         //model map for when we get back to the jsp
         Owner owner = service.getOwnerbyId(id);
         modelMap.addAttribute("owner", owner);
-        return "updateOwner.jsp";
+        return "updateOwner";
     }
 
 
@@ -62,7 +62,7 @@ public class OwnerContoller {
         service.updateOwner(owner); // i wont use it so i dont save it somewhere like createOwner
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners", owners);
-        return "OwnerUpdatePage.jsp"; //return to all records page
+        return "OwnerUpdatePage"; //return to all records page
     }
 
 }
