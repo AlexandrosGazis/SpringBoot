@@ -5,6 +5,7 @@ import com.carshopwebapp.entitities.Owner;
 import com.carshopwebapp.services.OwnerService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -35,6 +36,13 @@ public class OwnerContoller {
 
     @RequestMapping("/showCreate")
     public String createNewOwner() {
+        return "createOwner";
+    }
+
+    @RequestMapping("/search")
+    public String search(Model model, @RequestParam (name = "epitheto") String surname)
+    {
+        model.addAttribute("owners", service.getOwnersBySurname(surname));
         return "createOwner";
     }
 

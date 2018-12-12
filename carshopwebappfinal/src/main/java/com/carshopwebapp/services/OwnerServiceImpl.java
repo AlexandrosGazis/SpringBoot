@@ -48,4 +48,9 @@ public class OwnerServiceImpl implements OwnerService {
     public List<Owner> getAllOwners() {
         return repository.findAll(); //changed OnwnerRepository to .org.spring.Jpa from crud in order to return a list and not an iterable
     }
+
+    @Override
+    public List<Owner> getOwnersBySurname(String surname) {
+        return repository.findByEpitheto(surname);
+    }
 }

@@ -18,5 +18,8 @@ public interface OwnerService {
 
     List<Owner> getAllOwners();
 
+    List<Owner> getOwnersBySurname(String surname);
+
+
 
 }
