@@ -63,4 +63,16 @@ public class RepairController {
         modelMap.addAttribute("repairs", repairs);
         return "RepairUpdatePage"; //return to all records page
     }
+
+
+    @RequestMapping("/deleteRepair") //it gets it from the displayRepairs.jsp
+    public String deleteRepair(@RequestParam("id") int id, ModelMap modelMap) {
+        Repair repair = new Repair();
+        repair = service.getRepairbyId(id);//get the repair
+        service.deleteRepair(repair); //delete the repair
+        List<Repair> repairs = service.getAllRepairs();
+        modelMap.addAttribute("repairs", repairs);
+        //send response back via modelmap
+        return "RepairUpdatePage"; //go back to all Records page
+    }
 }

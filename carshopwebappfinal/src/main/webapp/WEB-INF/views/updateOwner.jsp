@@ -13,8 +13,32 @@
         table, th, td {
             border: 3px solid black;
         }
+        .styled {
+            border: 0;
+            line-height: 2.5;
+            padding: 0 20px;
+            font-size: 1rem;
+            text-align: center;
+            color: #fff;
+            text-shadow: 1px 1px 1px #000;
+            border-radius: 10px;
+            background-color: rgb(126, 220, 102);
+            background-image: linear-gradient(to top left,
+            rgba(0, 0, 0, .2),
+            rgba(0, 0, 0, .2) 30%,
+            rgba(0, 0, 0, 0));
+            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
+            inset -2px -2px 3px rgba(0, 0, 0, .6);
+        }
 
+        .styled:hover {
+            background-color: rgba(255, 0, 0, 1);
+        }
 
+        .styled:active {
+            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
+            inset 2px 2px 3px rgba(0, 0, 0, .6);
+        }
     </style>
     <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
     <title>Update a record(Owners)</title>
@@ -25,8 +49,8 @@
       <pre>
     Id:   <input type="text" name="id" value="${owner.id}" readonly="true"/>
     ΑΦΜ: <input type="text" name="afm"value=${owner.afm}/>
-    Ονομα: <input type="text" name="onoma" value=${owner.onoma}"/>
-    Επίθετο: <input type="text" name="epitheto"value=${owner.epitheto}/>
+    Ονομα: <input type="text" name="onoma" value=${owner.onoma}/>
+    Επίθετο: <input type="text" name="epitheto" value=${owner.epitheto}/>
     Διεύθυνση: <input type="text" name="dieuthinsi"value=${owner.dieuthinsi}/>
     Email: <input type="text" name="email"value=${owner.email}/>
     Κωδικος: <input type="text" name="kwdikoXristi"value=${owner.kwdikoXristi}/>
@@ -37,6 +61,11 @@
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
     </pre>
 </form>
+
+<button class="favorite styled"  type="button">
+<td><a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a></td>
+</button>
+
 <br>
 <a href="index2.html"> Aρχικη σελιδα</a> <br>
 <a href="RepairPages"> Repair Page Επιλογες</a><br>
