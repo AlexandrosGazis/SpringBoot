@@ -57,13 +57,14 @@
     Μαρκα: <input type="text" name="markaOximatos"value=${owner.markaOximatos}/>
     Πινακιδα: <input type="text" name="pinakidaOximatos"value=${owner.pinakidaOximatos}/>
     Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"${owner.tipoXristi=='Administrator'?'checked':'' }/>    User <input type="radio" name="tipoXristi" value="User"${owner.tipoXristi=='User'?'checked':'' }/>
-   <br>
+
+          <br>
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
     </pre>
 </form>
 
 <button class="favorite styled"  type="button">
-<td><a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a></td>
+<a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a><
 </button>
 
 <br>

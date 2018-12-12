@@ -28,7 +28,7 @@
         <th>User id</th>
         <th>ΑΦΜ</th>
         <th>Ονομα</th>
-        <th>Eπιθετο</th>
+        <th>Επιθετο</th>
         <th>Διευθυνση</th>
         <th>Email</th>
         <th>Μαρκα Οχηματος</th>

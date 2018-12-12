@@ -61,7 +61,7 @@
 </form>
 
 <button class="favorite styled"  type="button">
-    <td><a href="deleteRepair?id=${repair.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a></td>
+    <a href="deleteRepair?id=${repair.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a>
 </button>
 
 
