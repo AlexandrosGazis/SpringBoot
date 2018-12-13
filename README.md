@@ -29,3 +29,14 @@ The index page consists of the following:
 	b. Display All Entries
 	
 	c. Update/Delete an Entry
+	
+	
+-Search the Database (via User Input) 
+
+
+	a. For a user's surname display all available db records
+	
+	b. For a user's AFM (National Insurance number) display all available db records
+	
+	c. For a user's Email Adress display all available db records
+	
