@@ -30,13 +30,13 @@
     function getInput() {
       console.log("ok");
 		var x = document.getElementById("myBtn");
-		var askUser = prompt("Please enter the ΑΦΜ to make me search the db! ");
+		var askUser = prompt("Please enter the Επιθετο to make me search the db! ");
    
 		if (askUser == null || askUser == "") {
 			alert("No iput retry...");
 		} else {
 	      console.log("ok2");
-		  document.getElementById("linked").href="http://localhost:8000/carshopwebapp/search2?afm="+askUser;
+		  document.getElementById("linked").href="http://localhost:8000/carshopwebapp/search?epitheto="+askUser;
           show();
 		  console.log("ok3"); }
     }                    
