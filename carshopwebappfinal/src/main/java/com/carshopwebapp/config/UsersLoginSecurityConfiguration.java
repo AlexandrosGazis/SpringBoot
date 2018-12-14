@@ -24,12 +24,17 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.authorizeRequests().antMatchers("/").permitAll().antMatchers("/welcome")
+        http.authorizeRequests()
+                .antMatchers("/")
+                //.permitAll().antMatchers("/welcome")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/showCreate")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/saveOwn")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/showCreateRepair")
+                .hasAnyRole("USER", "ADMIN").antMatchers("/updateRepair")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/saveRepair")
-                .hasAnyRole("USER", "ADMIN").anyRequest().authenticated().and().formLogin()
+                .hasAnyRole("USER", "ADMIN").antMatchers("/welcomeUser")
+                .hasAnyRole( "USER", "ADMIN").antMatchers("/welcomeAdmin")
+                .hasAnyRole( "ADMIN").anyRequest().authenticated().and().formLogin()
                 .successHandler(loginSecuritySimpleAuthenticationSuccessHandler)
                 .permitAll().and().logout().permitAll();
 

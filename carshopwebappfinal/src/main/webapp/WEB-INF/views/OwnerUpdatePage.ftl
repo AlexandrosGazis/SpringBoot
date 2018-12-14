@@ -48,7 +48,8 @@
 
           <td><a href="showUpdate?id=${owner.id}">Update</a></td>
 
-      </tr>
+
+        </tr>
     </#list>
 
 
