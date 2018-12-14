@@ -3,9 +3,7 @@
     <a href="index2.html"> Aρχικη σελιδα</a> | &nbsp;
     <a href="RepairPages"> Repair Page Επιλογες</a>| &nbsp;
     <a href="OwnerPages"> Οwner Page Επιλογες</a>| &nbsp;
+    <a href="logout">Logout</a>
 
-
-            <a href="logout" )">Logout</a>
-            </h3></u>
 
 </div>

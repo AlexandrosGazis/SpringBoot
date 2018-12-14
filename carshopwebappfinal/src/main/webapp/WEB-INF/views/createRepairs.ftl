@@ -25,7 +25,7 @@ ${msg!"-"}
 <a href="index2.html"> Aρχικη σελιδα</a> <br>
 <a href="RepairPages"> Repair Page Επιλογες</a><br>
 <a href="OwnerPages"> Οwner Page Επιλογες</a><br>
-
+<a href="logout">Logout</a><br>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

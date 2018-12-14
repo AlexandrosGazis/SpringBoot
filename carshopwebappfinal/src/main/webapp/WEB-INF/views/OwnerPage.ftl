@@ -12,6 +12,9 @@
 <a href="showCreate"> Εισαγωγή Νέων Δεδομενων-Owners</a><br>
 
 <a href="OwnerUpdatePage"> Update-Owners</a><br>
+<br><br>
+<a href="logout">Logout</a><br>
+
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

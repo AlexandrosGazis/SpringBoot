@@ -27,6 +27,8 @@ ${msg!"-"}
 <a href="index2.html"> Aρχικη σελιδα</a> <br>
 <a href="RepairPages"> Repair Page Επιλογες</a><br>
 <a href="OwnerPages"> Οwner Page Επιλογες</a><br>
+<a href="logout">Logout</a><br>
+
 
 
 

@@ -12,7 +12,8 @@
 <a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repair</a><br>
 
 <a href="RepairUpdatePage"> Update-Repairs</a><br>
-
+<br><br>
+<a href="logout">Logout</a><br>
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
