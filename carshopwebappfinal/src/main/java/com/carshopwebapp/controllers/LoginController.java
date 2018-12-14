@@ -27,7 +27,7 @@ import org.springframework.web.servlet.ModelAndView;
         return new ModelAndView("welcomeAdmin");
     }
 
-/*
+  
 
     @Override
         public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {

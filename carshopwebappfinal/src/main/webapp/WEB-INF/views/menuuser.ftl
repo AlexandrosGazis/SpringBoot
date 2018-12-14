@@ -5,9 +5,7 @@
     <a href="OwnerPages"> Οwner Page Επιλογες</a>| &nbsp;
 
 
-            <a onclick="document.forms['logoutForm'].submit()">Logout</a>
+            <a href="logout" )">Logout</a>
             </h3></u>
-
-
 
 </div>
