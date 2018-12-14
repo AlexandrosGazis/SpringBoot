@@ -1,9 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-
-<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@page isELIgnored="false"%>
-
 <!DOCTYPE html >
 
 
@@ -38,7 +32,7 @@
 
     </tr>
 
-    <c:forEach items="${owners}" var="owner">
+    <#list owners as owner>
 
       <tr>
 
@@ -50,12 +44,12 @@
         <td>${owner.email}</td>
         <td>${owner.markaOximatos}</td>
         <td>${owner.pinakidaOximatos}</td>
-        <td>${owner.tipoXristi}</td>
+        <td>${owner.TipoXristi!"User"}</td>
 
           <td><a href="showUpdate?id=${owner.id}">Update</a></td>
 
       </tr>
-    </c:forEach>
+    </#list>
 
 
 

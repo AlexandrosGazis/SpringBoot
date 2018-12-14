@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
 <!DOCTYPE html >
 
 <html>
@@ -9,18 +7,22 @@
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
-<form action="saveInfo" method="post">
+<form action="saveOwn" method="post">
       <pre>
-    Δωσε μου ΑΦΜ: <input type="text" name="afm" value="${item.value}/>
+    Id:   <input type="text" name="id"/>
+    ΑΦΜ: <input type="text" name="afm"/>
+    Ονομα: <input type="text" name="onoma"/>
+    Επίθετο: <input type="text" name="epitheto"/>
+    Διεύθυνση: <input type="text" name="dieuthinsi"/>
+    Email: <input type="text" name="email"/>
+    Κωδικος: <input type="text" name="kwdikoXristi"/>
+    Μαρκα: <input type="text" name="markaOximatos"/>
+    Πινακιδα: <input type="text" name="pinakidaOximatos"/>
+    Χρηστης: Admin <input type="radio" name="tipoXristi" value="Administrator"/>    User <input type="radio" name="tipoXristi" value="User"/>
     <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
-
-          <button class="favorite styled"  type="button">
-<a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a>
-</button>
-
     </pre>
 </form>
-${msg}
+${msg!"-"}
 <br>
 <a href="index2.html"> Aρχικη σελιδα</a> <br>
 <a href="RepairPages"> Repair Page Επιλογες</a><br>

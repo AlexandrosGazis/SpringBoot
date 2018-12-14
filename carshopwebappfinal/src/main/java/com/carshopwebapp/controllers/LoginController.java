@@ -28,20 +28,7 @@ public class LoginController implements AuthenticationSuccessHandler {
     public ModelAndView firstPage() {
         return new ModelAndView("welcome");
     }
-/*
-    @RequestMapping(value = "/login", method = RequestMethod.GET)
-    public String loginPage(HttpServletRequest httpServletRequest, Model model) {
-        if(httpServletRequest.isUserInRole("ROLE_ADMIN")) {
-            return "redirect:/index2.html";
-        } else if(httpServletRequest.isUserInRole("ROLE_USER")) {
-            return "redirect:/sintelestes.html";
-        } else {
-            return "";
-        }
-    }
 
-
-*/
 
         @Override
         public void onAuthenticationSuccess(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, Authentication authentication) throws IOException, ServletException {
@@ -49,9 +36,9 @@ public class LoginController implements AuthenticationSuccessHandler {
             Set<String> roles = AuthorityUtils.authorityListToSet(authentication.getAuthorities());
 
             if (roles.contains("ROLE_ADMIN")) {
-                httpServletResponse.sendRedirect("/welcome");
-            } else {
                 httpServletResponse.sendRedirect("/");
+            } else {
+                httpServletResponse.sendRedirect("/welcome");
             }
         }
     }

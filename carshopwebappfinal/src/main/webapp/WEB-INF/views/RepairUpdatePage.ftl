@@ -1,9 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
-
-<%@ taglib  uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-<%@page isELIgnored="false"%>
-
 <!DOCTYPE html >
 
 
@@ -36,7 +30,7 @@
 
     </tr>
 
-    <c:forEach items="${repairs}" var="repair">
+    <#list repairs as repair>
 
         <tr>
 
@@ -52,7 +46,7 @@
             <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
 
         </tr>
-    </c:forEach>
+    </#list>
 
 
 

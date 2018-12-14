@@ -28,8 +28,8 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
                 .hasAnyRole("USER", "ADMIN").antMatchers("/showCreate")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/saveOwn")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/showCreateRepair")
-                .hasAnyRole("ADMIN").antMatchers("/saveRepair")
-                .hasAnyRole("ADMIN").anyRequest().authenticated().and().formLogin()
+                .hasAnyRole("USER", "ADMIN").antMatchers("/saveRepair")
+                .hasAnyRole("USER", "ADMIN").anyRequest().authenticated().and().formLogin()
                 .successHandler(loginSecuritySimpleAuthenticationSuccessHandler)
                 .permitAll().and().logout().permitAll();
 
@@ -45,29 +45,7 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
                 .withUser("superuser").password(encoder.encode("superuser")).authorities("ROLE_USER", "ROLE_ADMIN");
     }
 
-
- /*   @Bean
-    public BCryptPasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
-    }
-*/
 }
-/*
-
-    @SuppressWarnings("deprecation")
-    @Bean
-    public static NoOpPasswordEncoder passwordEncoder() {
-        return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
-    }
-
-
-    @SuppressWarnings("deprecation")
-    @Bean
-    public static NoOpPasswordEncoder passwordEncoder() {
-        return (NoOpPasswordEncoder) NoOpPasswordEncoder.getInstance();
-    }
-    */
-
 
 
 

@@ -1,5 +1,3 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-         pageEncoding="UTF-8" %>
 <!DOCTYPE html >
 
 <html>
@@ -11,9 +9,9 @@
 <body>
 
 <br>
-<a href="showCreateRepair"> Εισαγωγή Νέων Δεδομενων-Repair</a><br>
+<a href="showCreate"> Εισαγωγή Νέων Δεδομενων-Owners</a><br>
 
-<a href="RepairUpdatePage"> Update-Repairs</a><br>
+<a href="OwnerUpdatePage"> Update-Owners</a><br>
 
 
 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
