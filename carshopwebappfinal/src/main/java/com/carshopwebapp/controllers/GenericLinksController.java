@@ -18,7 +18,7 @@ public class GenericLinksController {
 
     @RequestMapping("/")
     public String startPage() {
-        return "redirect:/index2";
+        return "redirect:/index.html";
     }
 
     @RequestMapping("/sintelestes")
