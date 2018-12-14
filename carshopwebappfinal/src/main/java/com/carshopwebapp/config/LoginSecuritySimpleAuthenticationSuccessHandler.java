@@ -34,6 +34,7 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
+                    System.out.println("Check out this error1");
                 }
             } else if(authority.getAuthority().equals("ROLE_ADMIN")) {
                 try {
@@ -41,9 +42,12 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
+                    System.out.println("Check out this error2");
                 }
             } else {
+                System.out.println("Check out this error3");
                 throw new IllegalStateException();
+
             }
         });
 
