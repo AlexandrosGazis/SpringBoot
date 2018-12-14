@@ -21,7 +21,7 @@ public class OwnerContoller {
 
     @RequestMapping("/OwnerPages")
     public String ownerOptins() {
-        return "OwnerPage";
+        return "owner-page";
     }
 
 
@@ -29,13 +29,13 @@ public class OwnerContoller {
     public String ownerOptionUpdate(ModelMap modelMap) {
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners", owners);
-        return "OwnerUpdatePage";
+        return "owner-update-page";
     }//ADD delete option
 
 
     @RequestMapping("/showCreate")
     public String createNewOwner() {
-        return "createOwner";
+        return "create-owner";
     }
 
 
@@ -44,7 +44,7 @@ public class OwnerContoller {
         Owner userSaved = service.saveOwner(owner);
         String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + userSaved.getId();
         modelMap.addAttribute("msg", msg);
-        return "createOwner";  //request modelattribute        //response modelmap (pass key value pairs)
+        return "create-owner";  //request modelattribute        //response modelmap (pass key value pairs)
     }
 
 
@@ -53,7 +53,7 @@ public class OwnerContoller {
         //model map for when we get back to the jsp
         Owner owner = service.getOwnerbyId(id);
         modelMap.addAttribute("owner", owner);
-        return "updateOwner";
+        return "update-owner";
     }
 
     @RequestMapping("/updateOwn") //uri to handle
@@ -61,7 +61,7 @@ public class OwnerContoller {
         service.updateOwner(owner); // i wont use it so i dont save it somewhere like createOwner
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners", owners);
-        return "OwnerUpdatePage"; //return to all records page
+        return "owner-update-page"; //return to all records page
     }
 
 
@@ -73,7 +73,7 @@ public class OwnerContoller {
         List<Owner> owners = service.getAllOwners();
         modelMap.addAttribute("owners", owners);
         //send response back via modelmap
-        return "OwnerUpdatePage"; //go back to all Records page
+        return "owner-update-page"; //go back to all Records page
     }
 
 }

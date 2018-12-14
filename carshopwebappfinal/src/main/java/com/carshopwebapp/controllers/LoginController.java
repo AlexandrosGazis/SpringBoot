@@ -18,13 +18,13 @@ import org.springframework.web.servlet.ModelAndView;
 
     @RequestMapping("/welcomeUser")
     public ModelAndView helloUser() {
-        return new ModelAndView("welcomeUser");
+        return new ModelAndView("welcome-user");
     }
 
 
     @RequestMapping("/welcomeAdmin")
     public ModelAndView helloAdmin() {
-        return new ModelAndView("welcomeAdmin");
+        return new ModelAndView("welcome-admin");
     }
 
     }
