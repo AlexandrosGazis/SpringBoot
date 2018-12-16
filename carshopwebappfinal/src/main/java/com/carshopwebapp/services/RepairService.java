@@ -17,4 +17,5 @@ public interface RepairService {
 
     List<Repair> getAllRepairs();
 
+    List<Repair>  getfindByIdEquals(int id);
 }

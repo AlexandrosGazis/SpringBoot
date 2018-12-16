@@ -48,4 +48,8 @@ public class RepairServiceImpl implements RepairService {
     public List<Repair> getAllRepairs() {
         return repository2.findAll();
     }
+
+    @Override
+    public List<Repair>  getfindByIdEquals(int id){return repository2.findByIdEquals(id);}
+
 }
