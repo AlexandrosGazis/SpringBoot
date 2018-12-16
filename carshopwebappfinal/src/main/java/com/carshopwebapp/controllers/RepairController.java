@@ -78,6 +78,7 @@ public class RepairController {
         service.deleteRepair(repair); //delete the repair
         List<Repair> repairs = service.getAllRepairs();
         modelMap.addAttribute("repairs", repairs);
+
         //send response back via modelmap
         return "repair-update-page"; //go back to all Records page
     }

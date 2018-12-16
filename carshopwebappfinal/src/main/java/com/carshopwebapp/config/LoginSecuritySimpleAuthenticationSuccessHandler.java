@@ -2,6 +2,7 @@ package com.carshopwebapp.config;
 
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.GrantedAuthority;
+import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.web.DefaultRedirectStrategy;
 import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.authentication.AuthenticationSuccessHandler;
@@ -23,6 +24,9 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
     public void onAuthenticationSuccess(HttpServletRequest arg0, HttpServletResponse arg1, Authentication authentication)
             throws IOException, ServletException {
 
+        //get user login name
+        Authentication authentication2 = SecurityContextHolder.getContext().getAuthentication();
+        String currentPrincipalName = authentication2.getName();
 
 
 
@@ -30,7 +34,7 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
         authorities.forEach(authority -> {
             if(authority.getAuthority().equals("ROLE_USER")) {
                 try {
-                    redirectStrategy.sendRedirect(arg0, arg1, "/welcomeUser");
+                    redirectStrategy.sendRedirect(arg0, arg1, "/welcomeUser2");
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();

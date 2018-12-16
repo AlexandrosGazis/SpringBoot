@@ -14,7 +14,9 @@
 </head>
 <body>
 	<#include "menu-user.ftl">
-	<h3 style="color: red;">Hello User</h3>
+	<#list repairs as repair>
+	<h3 style="color: red;">Hello User:${msg!"LATHOS DES TO FTL"}, την επισκευη σας εχει αναλαβει ο τεχνικος: ${repair.owner}</h3>
+	</#list>
 
 
 	<h2>Repairs:</h2>
@@ -24,7 +26,6 @@
 			<th>Κατάσταση</th>
 			<th>Είδος επισκευής</th>
 			<th>Κόστος</th>
-			<th>Owner(service)</th>
 			<th>Περιγραφή</th>
 			<th></th>
 
@@ -39,7 +40,6 @@
 			<td>${repair.katastasi}</td>
 			<td>${repair.eidosepiskeuis}</td>
 			<td>${repair.kostos}</td>
-			<td>${repair.owner}</td>
 			<td>${repair.perigrafi}</td>
 
 
