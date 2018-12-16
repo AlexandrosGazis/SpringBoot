@@ -10,9 +10,10 @@ public interface OwnerRepository extends JpaRepository<Owner, Integer> {
     //be carefull for the owner to import the correct package
     //<..., Integer> due to the Location.class @id which is int ;)
 
-    List<Owner>  findByEpitheto(String epitheto);
+    List<Owner> findByEpitheto(String epitheto);
     List<Owner> findOwnersByAfm(String afm) ;
-    List<Owner> findOwnersByEmail(String email) ;
+    List<Owner> findOwnersByEmail(String email);
+    Owner findByEmail(String email);
 
 
 }
