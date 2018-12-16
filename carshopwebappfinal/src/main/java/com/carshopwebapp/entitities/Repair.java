@@ -33,6 +33,18 @@ public class Repair {
     @Column(name = "perigrafi")
     private String perigrafi;
 
+
+    @Column(name = "userOwner_id")
+    private String userOwner_id;
+
+    public String getUserOwner_id() {
+        return userOwner_id;
+    }
+
+    public void setUserOwner_id(String userOwner_id) {
+        this.userOwner_id = userOwner_id;
+    }
+
     public int getId() {
         return id;
     }
@@ -99,6 +111,7 @@ public class Repair {
                 ", kostos=" + kostos +
                 ", owner='" + owner + '\'' +
                 ", perigrafi='" + perigrafi + '\'' +
+                ", userOwner_id='" + userOwner_id + '\'' +
                 '}';
     }
 }

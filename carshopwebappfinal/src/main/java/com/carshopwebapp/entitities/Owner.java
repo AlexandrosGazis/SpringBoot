@@ -32,16 +32,7 @@ public class Owner {
     private String pinakidaOximatos;
     @Column(name = "tipoxristi")
     private String tipoXristi;
-    @Column(name = "userOwner_id")
-    private int userOwnerId;
 
-    public int getUserOwnerId() {
-        return userOwnerId;
-    }
-
-    public void setUserOwnerId(int userOwnerId) {
-        this.userOwnerId = userOwnerId;
-    }
 
     public int getId() {
         return id;
@@ -137,7 +128,6 @@ public class Owner {
                 ", markaOximatos='" + markaOximatos + '\'' +
                 ", pinakidaOximatos='" + pinakidaOximatos + '\'' +
                 ", tipoXristi='" + tipoXristi + '\'' +
-                ", userOwnerId=" + userOwnerId +
                 '}';
     }
 }
