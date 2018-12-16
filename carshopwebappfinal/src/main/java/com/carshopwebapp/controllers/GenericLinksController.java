@@ -1,12 +1,19 @@
 package com.carshopwebapp.controllers;
 
 
+import com.carshopwebapp.entitities.Repair;
 import com.carshopwebapp.services.OwnerService;
+import com.carshopwebapp.services.RepairService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+
+import java.util.List;
 
 @Controller
 
@@ -14,6 +21,10 @@ public class GenericLinksController {
 
     @Autowired
     OwnerService service;
+    @Autowired
+    RepairService service2;
+
+    Logger logger = LoggerFactory.getLogger(RepairController.class);
 
 
     @RequestMapping("/")
@@ -65,5 +76,16 @@ public class GenericLinksController {
     public String searchEpitheto() {
         return "redirect:/anagnwstakisInputEpitheto.html";
     }
+
+
+    @RequestMapping("/welcomeUser2")
+    public String searchUserInfo(ModelMap modelMap) {
+        List<Repair> repairs = service2.getfindByIdEquals(2);
+        modelMap.addAttribute("repairs", repairs);
+        System.out.println(service2.getfindByIdEquals(2));
+        // logger.info(service.getfindByIdEquals(1).toString());
+        return "welcome-user2";
+    }
+
 
 }

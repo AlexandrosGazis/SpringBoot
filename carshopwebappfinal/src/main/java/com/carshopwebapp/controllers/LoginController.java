@@ -12,6 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
 //public class LoginController implements AuthenticationSuccessHandler {
     public class LoginController {
 
+
     @Autowired
     OwnerService service;
 

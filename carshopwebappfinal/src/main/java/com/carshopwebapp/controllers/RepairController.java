@@ -21,14 +21,11 @@ public class RepairController {
     @Autowired
     RepairService service;
 
-    Logger logger = LoggerFactory.getLogger(RepairController.class);
+    Logger logger = LoggerFactory.getLogger(RepairController.class); //deelete
 
 
     @RequestMapping("/RepairPages")
     public String repairOptins() {
-
-       // System.out.println(service.getfindByIdEquals(1));
-        logger.info(service.getfindByIdEquals(1).toString());
         return "repair-page";
     }
 
