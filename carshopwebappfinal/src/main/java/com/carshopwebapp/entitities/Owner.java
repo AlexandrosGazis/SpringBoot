@@ -10,7 +10,7 @@ import javax.persistence.Table;
 @Table(name = "owneruser")
 public class Owner {
     @Id
-
+    @Column(name = "id")
     private int id;
 
     //@Column  if the private name was different from the ones of our db

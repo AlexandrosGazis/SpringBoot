@@ -1,11 +1,8 @@
 package com.carshopwebapp.entitities;
 
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
-
+import javax.persistence.*;
+ import  com.carshopwebapp.entitities.Owner;
 @Entity
 @Table(name = "repair")
 public class Repair {
@@ -33,16 +30,23 @@ public class Repair {
     @Column(name = "perigrafi")
     private String perigrafi;
 
+    @OneToOne
+   /// @JoinColumn(
+   //         name = "userOwner_id",
+   ///         referencedColumnName = "owneruser")
+    //@JoinColumn(name = "userOwner_id", table = "owneruser")
+    //@Column(name = "userOwner_id")
+    @JoinColumn(name = "id")
+    private Owner ownerFullObject;
 
-    @Column(name = "userOwner_id")
-    private String userOwner_id;
 
-    public String getUserOwner_id() {
-        return userOwner_id;
+
+    public Owner getOwnerFullObject() {
+        return ownerFullObject;
     }
 
-    public void setUserOwner_id(String userOwner_id) {
-        this.userOwner_id = userOwner_id;
+    public void setOwnerFullObject(Owner ownerFullObject) {
+        this.ownerFullObject = ownerFullObject;
     }
 
     public int getId() {
@@ -111,7 +115,7 @@ public class Repair {
                 ", kostos=" + kostos +
                 ", owner='" + owner + '\'' +
                 ", perigrafi='" + perigrafi + '\'' +
-                ", userOwner_id='" + userOwner_id + '\'' +
+                ", ownerFullObject=" + ownerFullObject +
                 '}';
     }
 }

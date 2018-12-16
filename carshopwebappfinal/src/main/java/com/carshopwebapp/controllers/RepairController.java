@@ -3,6 +3,8 @@ package com.carshopwebapp.controllers;
 
 import com.carshopwebapp.entitities.Repair;
 import com.carshopwebapp.services.RepairService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -19,9 +21,14 @@ public class RepairController {
     @Autowired
     RepairService service;
 
+    Logger logger = LoggerFactory.getLogger(RepairController.class);
+
 
     @RequestMapping("/RepairPages")
     public String repairOptins() {
+
+       // System.out.println(service.getfindByIdEquals(1));
+        logger.info(service.getfindByIdEquals(1).toString());
         return "repair-page";
     }
 
@@ -53,7 +60,7 @@ public class RepairController {
         //model map for when we get back to the jsp
         Repair repair = service.getRepairbyId(id);
         modelMap.addAttribute("repair", repair);
-
+       // service.getfindByIdEquals(1);
         return "update-repairs";
     }
 
