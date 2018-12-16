@@ -82,7 +82,7 @@ public class GenericLinksController {
     public String searchUserInfo(ModelMap modelMap) {
         List<Repair> repairs = service2.getfindByIdEquals(2);
         modelMap.addAttribute("repairs", repairs);
-        System.out.println(service2.getfindByIdEquals(2));
+        //System.out.println(service2.getfindByIdEquals(2));
         // logger.info(service.getfindByIdEquals(1).toString());
         return "welcome-user2";
     }

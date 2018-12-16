@@ -43,8 +43,6 @@
 			<td>${repair.perigrafi}</td>
 
 
-			<td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
-
 			</tr>
 		</#list>
 
