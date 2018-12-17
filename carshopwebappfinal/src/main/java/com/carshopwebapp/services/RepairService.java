@@ -18,4 +18,7 @@ public interface RepairService {
     List<Repair> getAllRepairs();
 
     List<Repair>  getfindByIdEquals(int id);
+
+    List<Repair> getFirst10Repairs(String date);
+
 }

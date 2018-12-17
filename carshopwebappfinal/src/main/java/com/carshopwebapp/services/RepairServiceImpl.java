@@ -52,4 +52,9 @@ public class RepairServiceImpl implements RepairService {
     @Override
     public List<Repair>  getfindByIdEquals(int id){return repository2.findByIdEquals(id);}
 
+    @Override
+    public List<Repair> getFirst10Repairs(String date) {
+        return repository2.findTop10ByDateLike(date);
+    }
+
 }

@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 @Controller
@@ -82,4 +85,20 @@ public class RepairController {
         //send response back via modelmap
         return "repair-update-page"; //go back to all Records page
     }
-}
+
+
+    @RequestMapping("/welcomeAdmin2")
+    public String searchAdminInfo(@ModelAttribute("repair") Repair repair, ModelMap modelMap) {
+        DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd");
+        String formattedDate=dateFormat.format(new Date());
+        System.out.println("+++++++" + formattedDate);
+        logger.info("aaaaaaaaaaaaaaaaaa"+service.getFirst10Repairs(formattedDate).toString());
+        List<Repair> repairs = service.getFirst10Repairs(formattedDate);
+        modelMap.addAttribute("repairs", repairs);
+        String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + service.getFirst10Repairs(formattedDate).toString();
+        //System.out.println(service2.getfindByIdEquals(2));
+        // logger.info(service.getfindByIdEquals(1).toString());
+        return "welcome-admin2";
+    }
+
+    }
