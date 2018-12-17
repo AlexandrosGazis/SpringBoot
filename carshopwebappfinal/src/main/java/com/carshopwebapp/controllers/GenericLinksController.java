@@ -41,24 +41,21 @@ public class GenericLinksController {
 
 
     @RequestMapping("/search")//epitheto
-    public String search(Model model, @RequestParam(name = "epitheto") String surname)
-    {
+    public String search(Model model, @RequestParam(name = "epitheto") String surname) {
         model.addAttribute("owners", service.getOwnersBySurname(surname));
         return "registration-done";
     }    //http://localhost:8000/carshopwebapp/search?epitheto=Papakis
 
 
     @RequestMapping("/search2")//afm
-    public String search2(Model model, @RequestParam (name = "afm") String afm)
-    {
+    public String search2(Model model, @RequestParam(name = "afm") String afm) {
         model.addAttribute("owners", service.getOwnersByAfm(afm));
         return "registration-done";
     }    //http://localhost:8000/carshopwebapp/search2?afm=ASE-2934
 
 
     @RequestMapping("/search3")//email
-    public String search3(Model model, @RequestParam (name = "email") String email)
-    {
+    public String search3(Model model, @RequestParam(name = "email") String email) {
         model.addAttribute("owners", service.getOwnersByEmail(email));
         return "registration-done";
     }    //http://localhost:8000/carshopwebapp/search3?email=akis@aol.com
@@ -85,22 +82,12 @@ public class GenericLinksController {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
 
-        System.out.println("\n\n======="+currentPrincipalName+ "=======\n\n");
+        int idOfusername = service.getOwnersBySurname(currentPrincipalName).get(0).getId();
 
-
+        logger.info("\n\nId of the user(username login):" + currentPrincipalName + " in our db is:" + Integer.toString(idOfusername));
+        List<Repair> repairs = service2.getfindByIdEquals(idOfusername);
         String msg = " " + currentPrincipalName;
-        //System.out.println(service.getOwnersByEmail(currentPrincipalName)); //delete
-        System.out.println("jjj"+service.getOwnersBySurname(currentPrincipalName).get(0).getId());
-        //System.out.println("jjj"+service.getOwnersByAfm(currentPrincipalName));
-
-
-
-        //List<Repair> repairs = service2.getfindByIdEquals(2);
-        List<Repair> repairs = service2.getfindByIdEquals(2);
-
         modelMap.addAttribute("repairs", repairs);
-        //System.out.println(service2.getfindByIdEquals(2));
-        // logger.info(service.getfindByIdEquals(1).toString());
         modelMap.addAttribute("msg", msg);
         //service.ge
         return "welcome-user2";
