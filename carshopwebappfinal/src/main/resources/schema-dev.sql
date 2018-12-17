@@ -3,7 +3,7 @@ DROP TABLE IF EXISTS repair;
 CREATE TABLE repair (
                         `id` int(11) NOT NULL,
                         `datetime` date DEFAULT NULL,
-                        `katastasi` varchar(45) DEFAULT NULL,
+                        `katastasi` varchar(65) DEFAULT NULL,
                         `eidosepiskeuis` varchar(45) DEFAULT NULL,
                         `kostos` double DEFAULT NULL,
                         `owner` varchar(45) DEFAULT NULL,
@@ -20,7 +20,7 @@ CREATE TABLE owneruser (
                          `afm` varchar(20) DEFAULT NULL,
                          `onoma` varchar(20) DEFAULT NULL,
                          `epitheto` varchar(20) DEFAULT NULL,
-                         `dieuthinsi` varchar(20) DEFAULT NULL,
+                         `dieuthinsi` varchar(30) DEFAULT NULL,
                          `email` varchar(35) DEFAULT NULL,
                          `kwdikoxristi` varchar(20) DEFAULT NULL,
                          `markaoximatos` varchar(20) DEFAULT NULL,
