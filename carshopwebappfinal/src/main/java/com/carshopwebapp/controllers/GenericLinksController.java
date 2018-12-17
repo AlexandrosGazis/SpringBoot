@@ -76,7 +76,7 @@ public class GenericLinksController {
         return "redirect:/anagnwstakisInputEpitheto.html";
     }
 
-
+/*
     @RequestMapping("/welcomeUser2")
     public String searchUserInfo(ModelMap modelMap) {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
@@ -93,5 +93,5 @@ public class GenericLinksController {
         return "welcome-user2";
     }
 
-
+*/
 }

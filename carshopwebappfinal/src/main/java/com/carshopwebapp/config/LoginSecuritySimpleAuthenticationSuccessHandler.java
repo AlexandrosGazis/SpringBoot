@@ -34,10 +34,10 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
         authorities.forEach(authority -> {
             if(authority.getAuthority().equals("ROLE_USER")) {
                 try {
-                    redirectStrategy.sendRedirect(arg0, arg1, "/welcomeUser2");
+                    redirectStrategy.sendRedirect(arg0, arg1, "/welcomeUser");
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
-                    e.printStackTrace();
+                   // e.printStackTrace();
                     System.out.println("Check out this error1");
                 }
             } else if(authority.getAuthority().equals("ROLE_ADMIN")) {
@@ -45,7 +45,7 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
                     redirectStrategy.sendRedirect(arg0, arg1, "/welcomeAdmin");
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
-                    e.printStackTrace();
+                    //e.printStackTrace();
                     System.out.println("Check out this error2");
                 }
             } else {

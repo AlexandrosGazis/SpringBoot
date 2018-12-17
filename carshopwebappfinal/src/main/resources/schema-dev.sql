@@ -1,6 +1,5 @@
-DROP TABLE IF EXISTS `owneruser`;
-SET character_set_client = utf8mb4 ;
-CREATE TABLE `owneruser` (
+DROP TABLE IF EXISTS owneruser;
+CREATE TABLE owneruser (
                            `id` int(11) NOT NULL,
                            `afm` varchar(20) DEFAULT NULL,
                            `onoma` varchar(20) DEFAULT NULL,
@@ -14,10 +13,8 @@ CREATE TABLE `owneruser` (
                            PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
-
-DROP TABLE IF EXISTS `repair`;
-SET character_set_client = utf8mb4 ;
-CREATE TABLE `repair` (
+DROP TABLE IF EXISTS repair;
+CREATE TABLE repair (
                         `id` int(11) NOT NULL,
                         `datetime` date DEFAULT NULL,
                         `katastasi` varchar(45) DEFAULT NULL,
