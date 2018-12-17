@@ -87,6 +87,8 @@ public class RepairController {
     }
 
 
+
+
     @RequestMapping("/LastRepairs")
     public String searchAdminInfo(@ModelAttribute("repair") Repair repair, ModelMap modelMap) {
         DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd");
@@ -95,10 +97,15 @@ public class RepairController {
         logger.info("aaaaaaaaaaaaaaaaaa"+service.getFirst10Repairs(formattedDate).toString());
         List<Repair> repairs = service.getFirst10Repairs(formattedDate);
         modelMap.addAttribute("repairs", repairs);
-        String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + service.getFirst10Repairs(formattedDate).toString();
+       // String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + service.getFirst10Repairs(formattedDate).toString();
         //System.out.println(service2.getfindByIdEquals(2));
         // logger.info(service.getfindByIdEquals(1).toString());
         return "repair-last-dates";
     }
 
     }
+
+
+
+
+

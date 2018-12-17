@@ -23,10 +23,10 @@ insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi,
 
 
 
-insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (0, '2018-03-14', 'almost Finished', 'car brakes', 63.322, 'the_owner', 'large',0);
+insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (0, '2018-12-17', 'almost Finished', 'car brakes', 63.322, 'the_owner', 'large',0);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (1, '2017-08-08', 'finished', 'car brakes', 23.788, 'the_owner', 'medium',1);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (2, '2018-05-11', 'finished', 'car brakes', 58.062, 'the_owner', 'large',2);
-insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (3, '2018-07-10', 'waiting for spare parts', 'engine', 1978.57, 'the_owner', 'small',3);
+insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (3, '2018-12-17', 'waiting for spare parts', 'engine', 1978.57, 'the_owner', 'small',3);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (4, '2017-03-27', 'almost Finished', 'oil change', 963.13, 'the_owner', 'large',4);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (5, '2018-04-22', 'finished', 'engine', 670.68, 'the_owner', 'small',5);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (6, '2017-11-22', 'waiting for spare parts', 'oil change', 175, 'the_owner', 'large',6);
