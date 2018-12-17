@@ -163,9 +163,7 @@
 
         </fieldset>
     </form>
-
 </div>
-
 
 <!-- /.container -->
 

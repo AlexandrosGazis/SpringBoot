@@ -12,6 +12,7 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
@@ -40,11 +41,24 @@ public class GenericLinksController {
     }
 
 
+    @RequestMapping("/search-input-surname")
+    public String searchInputSurname() {
+        return "search-input-surname";
+    }
+
+
     @RequestMapping("/search")//epitheto
     public String search(Model model, @RequestParam(name = "epitheto") String surname) {
         model.addAttribute("owners", service.getOwnersBySurname(surname));
         return "registration-done";
     }    //http://localhost:8000/carshopwebapp/search?epitheto=Papakis
+
+
+
+
+
+
+
 
 
     @RequestMapping("/search2")//afm

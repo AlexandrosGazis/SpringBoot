@@ -93,8 +93,8 @@ public class RepairController {
     public String searchAdminInfo(@ModelAttribute("repair") Repair repair, ModelMap modelMap) {
         DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd");
         String formattedDate=dateFormat.format(new Date());
-        System.out.println("+++++++" + formattedDate);
-        logger.info("aaaaaaaaaaaaaaaaaa"+service.getFirst10Repairs(formattedDate).toString());
+     //   System.out.println("+++++++" + formattedDate);
+        //logger.info("aaaaaaaaaaaaaaaaaa"+service.getFirst10Repairs(formattedDate).toString());
         List<Repair> repairs = service.getFirst10Repairs(formattedDate);
         modelMap.addAttribute("repairs", repairs);
        // String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + service.getFirst10Repairs(formattedDate).toString();
