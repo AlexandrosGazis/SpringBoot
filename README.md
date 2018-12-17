@@ -3,7 +3,11 @@
 The aim of this repository is to learn **Spring Boot** and develop a CRUD application regarding a Car Repair Shop so as to deeply understand design patterns regarding the 3-tier Architecture used by this MVC framework.
 
 
-After importing the project, setting up your database (sql dump file is located in _VariousFiles_ folder) and fire up your server (tomcat) click the following:
+During server's startup, Spring Boot will automatically load 5 tuples of dummy data for each table so as to adequately Unit Test the application. When the server's proccess is terminated all data will be deleted automatically ([Spring Boot Documentation: Database Initialization](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html)).
+
+After importing the project, simply fire up your server (tomcat's port is set to 8000) and click the following:
+
+
 
 ## Login Page
 
