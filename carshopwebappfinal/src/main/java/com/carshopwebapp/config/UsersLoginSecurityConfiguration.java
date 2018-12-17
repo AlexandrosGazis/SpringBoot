@@ -67,7 +67,7 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
         authenticationMgr.inMemoryAuthentication().passwordEncoder(encoder)
                 .withUser("user").password(encoder.encode("user")).authorities("ROLE_USER")
                 .and()
-                .withUser("katerina@ee.duth.gr").password(encoder.encode("aaa")).authorities("ROLE_USER")
+                .withUser("Papadopoylos").password(encoder.encode("aaa")).authorities("ROLE_USER")
                 .and()
                 .withUser("superuser").password(encoder.encode("superuser")).authorities("ROLE_USER", "ROLE_ADMIN");
     }

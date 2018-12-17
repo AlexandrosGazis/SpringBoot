@@ -85,16 +85,24 @@ public class GenericLinksController {
         Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
         String currentPrincipalName = authentication.getName();
 
-        //logger.info(currentPrincipalName);
         System.out.println("\n\n======="+currentPrincipalName+ "=======\n\n");
-        List<Repair> repairs = service2.getfindByIdEquals(2);
+
+
         String msg = " " + currentPrincipalName;
-        System.out.println(service.getOwnersByEmail(currentPrincipalName)); //delete
+        //System.out.println(service.getOwnersByEmail(currentPrincipalName)); //delete
+        System.out.println("jjj"+service.getOwnersBySurname(currentPrincipalName).get(0).getId());
+        //System.out.println("jjj"+service.getOwnersByAfm(currentPrincipalName));
+
+
+
+        //List<Repair> repairs = service2.getfindByIdEquals(2);
+        List<Repair> repairs = service2.getfindByIdEquals(2);
+
         modelMap.addAttribute("repairs", repairs);
         //System.out.println(service2.getfindByIdEquals(2));
         // logger.info(service.getfindByIdEquals(1).toString());
         modelMap.addAttribute("msg", msg);
-
+        //service.ge
         return "welcome-user2";
     }
 
