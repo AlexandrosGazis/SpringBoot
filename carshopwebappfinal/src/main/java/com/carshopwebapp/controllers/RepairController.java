@@ -62,7 +62,7 @@ public class RepairController {
     }
 
 
-    @GetMapping("/updateRepair") //uri to handle
+    @RequestMapping("/updateRepair") //uri to handle
     public String updateRepairs(@ModelAttribute("repair") Repair repair, ModelMap modelMap) {
         service.updateRepair(repair); // i wont use it so i dont save it somewhere like createRepair
         List<Repair> repairs = service.getAllRepairs();
