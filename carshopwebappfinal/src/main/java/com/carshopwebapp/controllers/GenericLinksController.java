@@ -47,7 +47,7 @@ public class GenericLinksController {
     }
 
 
-    @RequestMapping("/search")//epitheto
+    @RequestMapping("/search")//surname
     public String search(Model model, @RequestParam(name = "epitheto") String surname) {
         model.addAttribute("owners", service.getOwnersBySurname(surname));
         return "registration-done";
