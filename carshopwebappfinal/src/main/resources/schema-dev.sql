@@ -1,18 +1,4 @@
-DROP TABLE IF EXISTS owneruser;
-CREATE TABLE owneruser (
-                           `id` int(11) NOT NULL,
-                           `afm` varchar(20) DEFAULT NULL,
-                           `onoma` varchar(20) DEFAULT NULL,
-                           `epitheto` varchar(20) DEFAULT NULL,
-                           `dieuthinsi` varchar(20) DEFAULT NULL,
-                           `email` varchar(35) DEFAULT NULL,
-                           `kwdikoxristi` varchar(20) DEFAULT NULL,
-                           `markaoximatos` varchar(20) DEFAULT NULL,
-                           `pinakidaoximatos` varchar(20) DEFAULT NULL,
-                           `tipoxristi` varchar(13) DEFAULT NULL,
-                           PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
+SET FOREIGN_KEY_CHECKS = 0;
 DROP TABLE IF EXISTS repair;
 CREATE TABLE repair (
                         `id` int(11) NOT NULL,
@@ -28,3 +14,17 @@ CREATE TABLE repair (
                         CONSTRAINT `userOwner_id` FOREIGN KEY (`userOwner_id`) REFERENCES `owneruser` (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
+DROP TABLE IF EXISTS owneruser;
+CREATE TABLE owneruser (
+                         `id` int(11) NOT NULL,
+                         `afm` varchar(20) DEFAULT NULL,
+                         `onoma` varchar(20) DEFAULT NULL,
+                         `epitheto` varchar(20) DEFAULT NULL,
+                         `dieuthinsi` varchar(20) DEFAULT NULL,
+                         `email` varchar(35) DEFAULT NULL,
+                         `kwdikoxristi` varchar(20) DEFAULT NULL,
+                         `markaoximatos` varchar(20) DEFAULT NULL,
+                         `pinakidaoximatos` varchar(20) DEFAULT NULL,
+                         `tipoxristi` varchar(13) DEFAULT NULL,
+                         PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;

@@ -41,7 +41,9 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
                 .hasAnyRole("USER", "ADMIN").antMatchers("/saveRepair")
                 .hasAnyRole("USER", "ADMIN").antMatchers("/welcomeUser")
                 .hasAnyRole( "USER", "ADMIN").antMatchers("/welcomeAdmin")
+                .hasAnyRole( "ADMIN").antMatchers("/h2-console")
                 .hasAnyRole( "ADMIN").anyRequest().authenticated().and().formLogin()
+
                 .successHandler(loginSecuritySimpleAuthenticationSuccessHandler)
                 .permitAll().and().logout().permitAll();
 
