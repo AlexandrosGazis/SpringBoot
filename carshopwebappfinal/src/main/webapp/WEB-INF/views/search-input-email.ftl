@@ -56,70 +56,27 @@
 
 <!-- Page Content -->
 <div class="container">
-
-    <#--<!-- Introduction Row &ndash;&gt;-->
-    <#--<h1 class="my-4">Welcome-->
-    <#--<small> to Team's 2 Project Future assignment!</small>-->
-    <#--</h1>-->
-    <#--<p>The aim of this site is to present a CRUD application developed using Java Spring.-->
-    <#--The aim of this project was to deeply understand concers regarding the 3-tier Architecture used by this MVC framework.</p>-->
-
-    <!-- Team Members Row -->
-    <div class="row">
-        <div class="col-lg-12">
-            <center> <h2 class="my-4">Repairs</h2> </center>
-        </div>
-
-        <div class="col-lg-6 col-sm-6 text-center mb-4">
-            <a href="showCreateRepair">  <img class="rounded-circle img-fluid d-block mx-auto"style="width:50%" src="https://vignette.wikia.nocookie.net/swordartonlineroleplay/images/f/fb/Il_fullxfull.341200860.jpg/revision/latest?cb=20121211040152" alt=""></a>
-            <h3>Add new repairs
-                <small></small>
-            </h3>
-            <p></p>
-        </div>
-
-        <div class="col-lg-6 col-sm-6 text-center mb-4">
-            <a href="RepairUpdatePage">  <img class="img-thumbnail" style="width:50%" src="https://upload.wikimedia.org/wikipedia/en/f/fb/Blacksmith_icon_symbol_-_hammer_and_anvil.jpg" alt=""></a>
-            <h3>Update repairs
-                <small></small>
-            </h3>
-            <p></p>
-        </div>
-
-    </div>
-
-
-</div>
-<!-- Team Members Row -->
-<div class="row">
     <div class="col-lg-12">
-        <center> <h2 class="my-4">To do more pages</h2> </center>
+        <center> <h2 class="my-4">Create a new owner</h2> </center>
     </div>
+    <form action ="search3" method="post" class="form-horizontal">
+        <fieldset>
 
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <a href="search-input-afm">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
-        <h3>Search AFM
-        </h3>
-        <p>Search through Owners database based on an owner's AFM (National Insurance number)</p>
-    </div>
+            <!-- Text input-->
+            <div class="form-group">
+                <label class="col-md-4 control-label" for="lastname">Last Name</label>
+                <div class="col-md-4">
+                    <input id="email" name="email" type="text" placeholder="Enter the owner's email" class="form-control input-md">
 
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <a href="search-input-email">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
-        <h3>Search Email
-        </h3>
-        <p>Search through Owners database based on an owner's email</p>
-    </div>
+                </div>
+            </div>
 
-    <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <a href="search-input-surname">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
-        <h3>Search Surname
-        </h3>
-        <p>Search through Owners database on an owner's surname</p>
-    </div>
+            </div>
+            <input type="submit" value="Search Email to the Database records"/>
 
+        </fieldset>
+    </form>
 </div>
-</div>
-
 
 <!-- /.container -->
 

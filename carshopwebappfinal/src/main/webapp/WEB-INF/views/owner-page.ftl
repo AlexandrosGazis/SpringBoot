@@ -93,31 +93,28 @@
 <!-- Team Members Row -->
 <div class="row">
     <div class="col-lg-12">
-        <center> <h2 class="my-4">Search Functions</h2> </center>
+        <center> <h2 class="my-4">To do more pages</h2> </center>
     </div>
 
     <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <a href="http://localhost:8000/carshopwebapp/search-afm">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
+        <a href="search-input-afm">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
         <h3>Search AFM
-            <small></small>
         </h3>
-        <p>Js dummy to search AFM</p>
+        <p>Search through Owners database based on an owner's AFM (National Insurance number)</p>
     </div>
 
     <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <a href="http://localhost:8000/carshopwebapp/search-email">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
-        <h3>Search Εμαιλ
-            <small></small>
+        <a href="search-input-email">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
+        <h3>Search Email
         </h3>
-        <p>Js dummy to search Εμαιλ</p>
+        <p>Search through Owners database based on an owner's email</p>
     </div>
 
     <div class="col-lg-4 col-sm-6 text-center mb-4">
-        <a href="http://localhost:8000/carshopwebapp/search-epitheto">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
-        <h3>Search Επιθετο
-            <small></small>
+        <a href="search-input-surname">  <img class="rounded-circle img-fluid d-block mx-auto" src="https://findicons.com/files/icons/2781/google_jfk_icons/128/search.png" alt=""></a>
+        <h3>Search Surname
         </h3>
-        <p>Js dummy to search Εμαιλ</p>
+        <p>Search through Owners database on an owner's surname</p>
     </div>
 
 </div>
