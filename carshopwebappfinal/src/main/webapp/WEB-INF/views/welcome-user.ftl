@@ -13,5 +13,5 @@
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <br><br><br><br><br>
-<a href="welcomeUser2"> Welcome-Page 2 option-Search User</a> <br>
+<a href="/"> Welcome-Page 2 option-Search User</a> <br>
 </html>

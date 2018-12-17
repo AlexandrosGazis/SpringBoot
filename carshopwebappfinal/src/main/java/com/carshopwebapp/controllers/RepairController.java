@@ -87,7 +87,7 @@ public class RepairController {
     }
 
 
-    @RequestMapping("/welcomeAdmin2")
+    @RequestMapping("/LastRepairs")
     public String searchAdminInfo(@ModelAttribute("repair") Repair repair, ModelMap modelMap) {
         DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd");
         String formattedDate=dateFormat.format(new Date());
@@ -98,7 +98,7 @@ public class RepairController {
         String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + service.getFirst10Repairs(formattedDate).toString();
         //System.out.println(service2.getfindByIdEquals(2));
         // logger.info(service.getfindByIdEquals(1).toString());
-        return "welcome-admin2";
+        return "repair-last-dates";
     }
 
     }

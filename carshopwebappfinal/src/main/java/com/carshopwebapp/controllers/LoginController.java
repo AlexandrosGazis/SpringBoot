@@ -23,11 +23,6 @@ import org.springframework.web.servlet.ModelAndView;
     }
 
 
-    @RequestMapping("/welcomeAdmin")
-    public ModelAndView helloAdmin() {
-        return new ModelAndView("welcome-admin");
-    }
-
     }
 
 
