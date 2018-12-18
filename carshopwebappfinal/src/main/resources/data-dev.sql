@@ -42,4 +42,3 @@ insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, peri
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (18, '2018-07-06', 'almost Finished', 'tires', 12.3732, 'the_owner', 'small',18);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (19, '2018-03-01', 'waiting for spare parts', 'oil change', 13758.4, 'the_owner', 'small',19);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (20, '2018-12-17', 'almost Finished', 'car brakes', 63.322, 'the_owner', 'large',0);
-
