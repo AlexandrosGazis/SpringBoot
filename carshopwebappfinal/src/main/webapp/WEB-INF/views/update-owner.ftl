@@ -1,74 +1,179 @@
-<#setting number_format="computer">
+<!DOCTYPE html>
+<html lang="en">
 
-<!DOCTYPE html >
-
-
-<html>
 <head>
-    <style>
-        table, th, td {
-            border: 3px solid black;
-        }
-        .styled {
-            border: 0;
-            line-height: 2.5;
-            padding: 0 20px;
-            font-size: 1rem;
-            text-align: center;
-            color: #fff;
-            text-shadow: 1px 1px 1px #000;
-            border-radius: 10px;
-            background-color: rgb(126, 220, 102);
-            background-image: linear-gradient(to top left,
-            rgba(0, 0, 0, .2),
-            rgba(0, 0, 0, .2) 30%,
-            rgba(0, 0, 0, 0));
-            box-shadow: inset 2px 2px 3px rgba(255, 255, 255, .6),
-            inset -2px -2px 3px rgba(0, 0, 0, .6);
-        }
 
-        .styled:hover {
-            background-color: rgba(255, 0, 0, 1);
-        }
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-        .styled:active {
-            box-shadow: inset -2px -2px 3px rgba(255, 255, 255, .6),
-            inset 2px 2px 3px rgba(0, 0, 0, .6);
-        }
-    </style>
-    <meta http-equiv="Content-Type" content="text/html" ; charset=UTF-8">
-    <title>Update a record(Owners)</title>
-    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <title>Team 2 Project Future, Spring MVC project</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/round-about.css" rel="stylesheet">
+
 </head>
+
 <body>
-<form action="updateOwn" method="post">
-      <pre>
-    Id:   <input type="text" name="id" value="${owner.id}" readonly="true"/>
-    ΑΦΜ: <input type="text" name="afm"value=${owner.afm}/>
-    Ονομα: <input type="text" name="onoma" value=${owner.onoma}/>
-    Επίθετο: <input type="text" name="epitheto" value=${owner.epitheto}/>
-    Διεύθυνση: <input type="text" name="dieuthinsi"value=${owner.dieuthinsi}/>
-    Email: <input type="text" name="email"value=${owner.email}/>
-    Κωδικος: <input type="text" name="kwdikoXristi"value=${owner.kwdikoXristi}/>
-    Μαρκα: <input type="text" name="markaOximatos"value=${owner.markaOximatos}/>
-    Πινακιδα: <input type="text" name="pinakidaOximatos"value=${owner.pinakidaOximatos}/>
-    Χρηστης: <input type="text" name="tipoXristi" value=${owner.tipoXristi}/>
 
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+        <a class="navbar-brand" href="https://www.codehub.gr/product/java_spring/"><img src="https://www.codehub.gr/wp-content/uploads/2018/01/cropped-CodeHub-logo_320x132.png"
+                                                                                        class="responsive-img" style='max-height:33px;' alt="face"></a>
+        <a class="navbar-brand" href="https://www.projectfuture.gr/java-spring.html"><img src="http://www.greenbanking.gr/~/media/Images/GreenBusiness/logonew.ashx"
+                                                                                          class="responsive-img" style='max-height:33px;' alt="face"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="http://localhost:8000/carshopwebapp/">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="http://localhost:8000/carshopwebapp/sintelestes.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/AlexandreLeFou/SpringBoot">GitHub</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gitlab.com/AlexandreLeFou">GitLab</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="logout">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
 
-          <br>
-    <input type="submit" value="Αποθηκευσε τα Δεδομενα"/>
-    </pre>
-</form>
+<!-- Page Content -->
+<div class="container">
+    <div class="col-lg-12">
+        <center> <h2 class="my-4">Update an existing owner</h2> </center>
+    </div>
+    <form action ="updateOwn" method="post" class="form-horizontal">
+        <fieldset>
 
-<button class="favorite styled"  type="button">
-<a href="deleteOwner?id=${owner.id}">ΔΙΑΓΡΑΦΗ ΠΑΡΟΥΣΑΣ ΚΑΤΑΧΩΡΗΣΗΣ</a>
-</button>
+            <!-- Form Name -->
 
-<br>
-<a href="index.html"> Aρχικη σελιδα</a> <br>
-<a href="RepairPages"> Repair Page Επιλογες</a><br>
-<a href="OwnerPages"> Οwner Page Επιλογες</a><br>
-<br><br>
-<a href="logout">Logout</a><br>
+            <!-- Text input-->
+            <center><div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">ID</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="id" type="text" placeholder="Enter a valid id" class="form-control input-md" value="${owner.id}" readonly="true">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">AFM</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="afm" value=${owner.afm} type="text" placeholder="Enter a valid AFM number" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="firstName">First Name</label>
+                    <div class="col-md-4">
+                        <input id="firstName" name="onoma" value=${owner.onoma} type="text" placeholder="Enter the owner's first name" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="lastname">Last Name</label>
+                    <div class="col-md-4">
+                        <input id="lastname" name="epitheto" value=${owner.epitheto} type="text" placeholder="Enter the owner's last name" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="address">Address</label>
+                    <div class="col-md-4">
+                        <input id="address" name="dieuthinsi" value=${owner.dieuthinsi} type="text" placeholder="Enter the owner's address" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">E-mail</label>
+                    <div class="col-md-4">
+                        <input id="email" name="email" value=${owner.email} type="text" placeholder="Enter a valid e-mail" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Password input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="password">Password</label>
+                    <div class="col-md-4">
+                        <input id="password" name="kwdikoXristi" value=${owner.kwdikoXristi} type="password" placeholder="Enter a password" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="brand">Brand</label>
+                    <div class="col-md-4">
+                        <input id="brand" name="markaOximatos" value=${owner.markaOximatos} type="text" placeholder="Enter a brand" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="plate">Plate</label>
+                    <div class="col-md-4">
+                        <input id="plate" name="pinakidaOximatos" value=${owner.pinakidaOximatos} type="text" placeholder="Enter a valid plate" class="form-control input-md">
+
+                    </div>
+                </div>
+
+                <!-- Multiple Radios (inline) -->
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="xrhsths">User Type</label>
+                    <div class="col-md-4">
+                        <input id="xrhsths" name="tipoXristi" value=${owner.tipoXristi} type="text" placeholder="Enter a valid plate" class="form-control input-md">
+
+                    </div>
+                </div>
+                <input type="submit" value="Update Owner"/>
+
+        </fieldset>
+    </form></center>
+</div>
+
+<!-- /.container -->
+
+<!-- Footer -->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; Team 2 Project Future - Java | Spring 2018</p>
+    </div>
+    <!-- /.container -->
+</footer>
+
+<!-- Bootstrap core JavaScript -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
 </body>
+
 </html>

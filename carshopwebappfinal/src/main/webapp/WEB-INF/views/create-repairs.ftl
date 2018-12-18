@@ -59,84 +59,84 @@
     <div class="col-lg-12">
         <center> <h2 class="my-4">Create a new repair</h2> </center>
     </div>
-    <form action ="saveRepair" method="post" class="form-horizontal">
-        <fieldset>
+    <center><form action ="saveRepair" method="post" class="form-horizontal">
+            <fieldset>
 
-            <!-- Form Name -->
+                <!-- Form Name -->
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">ID</label>
-                <div class="col-md-4">
-                    <input id="textinput" name="id" type="text" placeholder="Enter a valid id" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">ID</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="id" type="text" placeholder="Enter a valid id" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Date (YYYY-MM-DD)</label>
-                <div class="col-md-4">
-                    <input id="textinput" name="date" type="text" placeholder="Enter a date" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Date (YYYY-MM-DD)</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="date" type="text" placeholder="Enter a date" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="textinput">Status</label>
-                <div class="col-md-4">
-                    <input id="textinput" name="katastasi" type="text" placeholder="Enter the vehicle's current state" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="textinput">Status</label>
+                    <div class="col-md-4">
+                        <input id="textinput" name="katastasi" type="text" placeholder="Enter the vehicle's current state" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Multiple Radios (inline) -->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="usertype">Repair Type</label>
-                <div class="col-md-4">
-                    <label class="radio-inline" for="usertype-0">
-                        <input type="radio" name="eidosepiskeuis" id="usertype-0" value="Μικρη" checked="checked">
-                        Minor
-                    </label>
-                    <label class="radio-inline" for="usertype-1">
-                        <input type="radio" name="eidosepiskeuis" id="usertype-1" value="Mεγαλη">
-                        Major
-                    </label>
+                <!-- Multiple Radios (inline) -->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="usertype">Repair Type</label>
+                    <div class="col-md-4">
+                        <label class="radio-inline" for="usertype-0">
+                            <input type="radio" name="eidosepiskeuis" id="usertype-0" value="Μικρη" checked="checked">
+                            Minor
+                        </label>
+                        <label class="radio-inline" for="usertype-1">
+                            <input type="radio" name="eidosepiskeuis" id="usertype-1" value="Mεγαλη">
+                            Major
+                        </label>
+                    </div>
                 </div>
-            </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="lastname">Cost</label>
-                <div class="col-md-4">
-                    <input id="lastname" name="kostos" type="text" placeholder="Enter the cost (dot separated)" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="lastname">Cost</label>
+                    <div class="col-md-4">
+                        <input id="lastname" name="kostos" type="text" placeholder="Enter the cost (dot separated)" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="email">Owner</label>
-                <div class="col-md-4">
-                    <input id="email" name="owner" type="text" placeholder="Enter the owner's name" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="email">Owner</label>
+                    <div class="col-md-4">
+                        <input id="email" name="owner" type="text" placeholder="Enter the owner's name" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="brand">Details</label>
-                <div class="col-md-4">
-                    <input id="brand" name="perigrafi" type="text" placeholder="Enter the details of the repair" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="brand">Details</label>
+                    <div class="col-md-4">
+                        <input id="brand" name="perigrafi" type="text" placeholder="Enter the details of the repair" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
 
-            <input type="submit" value="Create new Repair"/>
+                <input type="submit" value="Create new Repair"/>
 
-        </fieldset>
-    </form>
+            </fieldset>
+        </form></center>
 
 </div>
 

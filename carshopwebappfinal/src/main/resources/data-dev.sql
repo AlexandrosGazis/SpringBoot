@@ -1,5 +1,4 @@
 
-insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (0,29712431337, 'Jarvis', 'Scranney', '2 Cambridge Point', 'jscranney0@google.pl', 'fqTvlOr', 'Audi', 'IlZ-5733', 'Admin');
 insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (1,11831622466, 'Selle', 'Sore', '33 Straubel Center', 'ssore1@gmpg.org', 'IvxYXBf3glh', 'Hyundai', 'FkS-6528', 'User');
 insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (2,46995592415, 'Jessamyn', 'Kew', '5694 Boyd Parkway', 'jkew2@hc360.com', 'uFFhwvvD', 'Toyota', 'rZk-4114', 'User');
 insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (3,52901060424, 'Leshia', 'Rutgers', '7691 American Park', 'lrutgers3@ustream.tv', 'NZaLdy', 'Porsche', 'tTo-5273', 'Admin');
@@ -19,11 +18,11 @@ insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi,
 insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (17,71782761029, 'Bendick', 'Mongenot', '6103 John Wall Pass', 'bmongenoth@bbb.org', 'MAnnAjqFqOl', 'Cadillac', 'AiY-9792', 'User');
 insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (18,61484782039, 'Ignaz', 'Paskell', '55575 Cordelia Point', 'ipaskelli@shop-pro.jp', 'tN0Gl8Yczt', 'Ford', 'Kyp-8299', 'Admin');
 insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (19,18242514994, 'Mord', 'Beinisch', '786 Carpenter Parkway', 'mbeinischj@prweb.com', 'vCen8fVNL6DZ', 'Lincoln', 'YwW-0068', 'Admin');
+insert into owneruser (id,afm, onoma, epitheto, dieuthinsi, email, kwdikoxristi, markaoximatos, pinakidaoximatos, tipoxristi) values (20,29712431337, 'Jarvis', 'Scranney', '2 Cambridge Point', 'jscranney0@google.pl', 'fqTvlOr', 'Audi', 'IlZ-5733', 'Admin');
 
 
 
 
-insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (0, '2018-12-17', 'almost Finished', 'car brakes', 63.322, 'the_owner', 'large',0);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (1, '2017-08-08', 'finished', 'car brakes', 23.788, 'the_owner', 'medium',1);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (2, '2018-05-11', 'finished', 'car brakes', 58.062, 'the_owner', 'large',2);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (3, '2018-12-17', 'waiting for spare parts', 'engine', 1978.57, 'the_owner', 'small',3);
@@ -43,3 +42,4 @@ insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, peri
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (17, '2017-11-06', 'waiting for spare parts', 'oil change', 767.2, 'the_owner', 'large',17);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (18, '2018-07-06', 'almost Finished', 'tires', 12.3732, 'the_owner', 'small',18);
 insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (19, '2018-03-01', 'waiting for spare parts', 'oil change', 13758.4, 'the_owner', 'small',19);
+insert into repair (id, datetime, katastasi, eidosepiskeuis, kostos, owner, perigrafi,userOwner_id) values (20, '2018-12-17', 'almost Finished', 'car brakes', 63.322, 'the_owner', 'large',0);
