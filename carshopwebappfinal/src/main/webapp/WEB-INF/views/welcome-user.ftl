@@ -12,7 +12,7 @@
 </head>
 <body>
 <#list repairs as repair>
-	<h3 style="color: red;">Hello User:${msg!"LATHOS DES TO FTL"}, την επισκευη σας εχει αναλαβει ο τεχνικος: ${repair.owner}</h3>
+	<h3 style="color: red;">Hello User with email:${msg!"LATHOS DES TO FTL"}, εχετε τα εξης στοιχεια επισκευης:</h3>
 </#list>
 <h2>Repairs:</h2>
 <table>
