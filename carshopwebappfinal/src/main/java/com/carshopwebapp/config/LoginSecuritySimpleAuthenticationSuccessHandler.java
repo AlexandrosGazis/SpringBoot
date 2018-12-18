@@ -15,13 +15,15 @@ import java.io.IOException;
 import java.util.Collection;
 
 @Component
-public class LoginSecuritySimpleAuthenticationSuccessHandler implements AuthenticationSuccessHandler
+public class LoginSecuritySimpleAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
 
-    {
+    private static final String USER_HOME_PAGE_URL = "/welcomeUser2";
+    private static final String ADMIN_HOME_PAGE_URL = "/welcomeAdmin";
+
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
 
     @Override
-    public void onAuthenticationSuccess(HttpServletRequest arg0, HttpServletResponse arg1, Authentication authentication)
+    public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication)
             throws IOException, ServletException {
 
         //get user login name
@@ -29,23 +31,22 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
         String currentPrincipalName = authentication2.getName();
 
 
-
-        Collection<?extends GrantedAuthority> authorities = authentication.getAuthorities();
+        Collection<? extends GrantedAuthority> authorities = authentication.getAuthorities();
         authorities.forEach(authority -> {
-            if(authority.getAuthority().equals("ROLE_USER")) {
+            if (authority.getAuthority().equals("User")) {
                 try {
-                    redirectStrategy.sendRedirect(arg0, arg1, "/welcomeUser");
+                    redirectStrategy.sendRedirect(request, response, USER_HOME_PAGE_URL);
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
-                   // e.printStackTrace();
+                    e.printStackTrace();
                     System.out.println("Check out this error1");
                 }
-            } else if(authority.getAuthority().equals("ROLE_ADMIN")) {
+            } else if (authority.getAuthority().equals("Admin")) {
                 try {
-                    redirectStrategy.sendRedirect(arg0, arg1, "/");
+                    redirectStrategy.sendRedirect(request, response, ADMIN_HOME_PAGE_URL);
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
-                    //e.printStackTrace();
+                    e.printStackTrace();
                     System.out.println("Check out this error2");
                 }
             } else {

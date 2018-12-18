@@ -22,7 +22,7 @@ CREATE TABLE owneruser (
                          `epitheto` varchar(20) DEFAULT NULL,
                          `dieuthinsi` varchar(30) DEFAULT NULL,
                          `email` varchar(35) DEFAULT NULL,
-                         `kwdikoxristi` varchar(20) DEFAULT NULL,
+                         `kwdikoxristi` varchar(120) DEFAULT NULL,
                          `markaoximatos` varchar(20) DEFAULT NULL,
                          `pinakidaoximatos` varchar(20) DEFAULT NULL,
                          `tipoxristi` varchar(13) DEFAULT NULL,
