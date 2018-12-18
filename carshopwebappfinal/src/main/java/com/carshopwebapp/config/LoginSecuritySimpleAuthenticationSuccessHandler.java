@@ -41,7 +41,7 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
                     e.printStackTrace();
                     System.out.println("Check out this error1");
                 }
-            } else if (authority.getAuthority().equals("Administrator")) {
+            } else if (authority.getAuthority().equals("Admin")) {
                 try {
                     redirectStrategy.sendRedirect(request, response, ADMIN_HOME_PAGE_URL);
                 } catch (Exception e) {

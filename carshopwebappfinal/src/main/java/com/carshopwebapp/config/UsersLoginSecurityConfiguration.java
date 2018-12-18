@@ -45,16 +45,16 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http.authorizeRequests()
-                .antMatchers("/")
+                .antMatchers("/").hasAnyRole("User", "Admin")
                 //.permitAll().antMatchers("/welcome")
-                .hasAnyRole("User", "Administrator").antMatchers("/showCreate")
-                .hasAnyRole("User", "Administrator").antMatchers("/saveOwn")
-                .hasAnyRole("User", "Administrator").antMatchers("/showCreateRepair")
-                .hasAnyRole("User", "Administrator").antMatchers("/updateRepair")
-                .hasAnyRole("User", "Administrator").antMatchers("/saveRepair")
-                .hasAnyRole("User", "Administrator").antMatchers("/welcomeUser")
-                .hasAuthority("Administrator").antMatchers("/welcomeAdmin")
-                .hasAnyRole( "Administrator").anyRequest().authenticated().and().formLogin()
+                .antMatchers("/showCreate").hasAnyAuthority("User", "Admin")
+                .antMatchers("/saveOwn").hasAnyAuthority("User", "Admin")
+                .antMatchers("/showCreateRepair").hasAnyAuthority("User", "Admin")
+                .antMatchers("/updateRepair").hasAnyAuthority("User", "Admin")
+                .antMatchers("/saveRepair").hasAnyAuthority("User", "Admin")
+                .antMatchers("/welcomeUser").hasAuthority("Admin")
+                .antMatchers("/welcomeAdmin").hasAuthority( "Admin")
+                .anyRequest().authenticated().and().formLogin()
                 .successHandler(loginSecuritySimpleAuthenticationSuccessHandler)
                 .permitAll().and().logout().permitAll();
 
