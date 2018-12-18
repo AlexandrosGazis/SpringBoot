@@ -17,7 +17,7 @@ import java.util.Collection;
 @Component
 public class LoginSecuritySimpleAuthenticationSuccessHandler implements AuthenticationSuccessHandler {
 
-    private static final String USER_HOME_PAGE_URL = "/welcomeUser2";
+    private static final String USER_HOME_PAGE_URL = "/welcomeUser";
     private static final String ADMIN_HOME_PAGE_URL = "/";
 
     private RedirectStrategy redirectStrategy = new DefaultRedirectStrategy();
