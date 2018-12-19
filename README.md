@@ -11,12 +11,26 @@ After importing the project, simply fire up your server (tomcat's port is set to
 
 ## Login Page
 
-Currently the Login page is not validating via the database fields but in memory. In order to login [username/password] :
+The Login page (username/password) is validating the input via the database's password records which are hash encrypted. 
+ In order to login and test out the application the following login credentials are given [username/password] :
 
-	- User_Role: user/user
-	- Admin_Role: superuser/superuser
+	- User_Role: ssore1@gmpg.org / pass1234
+	- Admin_Role: lrutgers3@ustream.tv / pass1234
 
-## [Index Page](http://localhost:8000/carshopwebapp/) 
+Ρegarding Hash Encryption, user, administrator in these credentials have deliberately the same value. More specifically, even though they have the same (string) value, they are stored differently to our database. More specifically,
+User_Role Password is encrypted as: `$10$FKg42N1H9SytX7kr6m7TGu8T4uOcAdF5DTZOrI69CxPMVuVMm9iiy`
+
+whereas
+
+Admin_Role Password is encrypted as: `$2a$10$vYxq4JAQ2YTpleuCoYRtvOP8bcfS9gfgmbJU7L/MRcIGbWmSGtZfS`
+
+Admin_Role is encrypted as:  `$2a$10$vYxq4JAQ2YTpleuCoYRtvOP8bcfS9gfgmbJU7L/MRcIGbWmSGtZfS`
+
+## [Users's Index Page](http://localhost:8000/carshopwebapp/) 
+
+Depending on the user's credentials the webpage shall display the current Repair status of the car as stored to the database.
+
+## [Admin's Index Page](http://localhost:8000/carshopwebapp/) 
 
 The index page consists of the following:
 
