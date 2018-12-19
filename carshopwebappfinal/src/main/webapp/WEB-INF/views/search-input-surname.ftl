@@ -55,54 +55,29 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container" style="padding-bottom: 300px;padding-top: 50px;">
     <div class="col-lg-12">
-        <center> <h2 class="my-4">Owners</h2> </center>
+        <center> <h2 class="my-4">Search (Surname)</h2> </center>
     </div>
-    <#if owners?size != 0>
-    <table class ="table table-striped">
-        <tr>
-            <th>User id</th>
-            <th>ΑΦΜ</th>
-            <th>Ονομα</th>
-            <th>Επιθετο</th>
-            <th>Διευθυνση</th>
-            <th>Email</th>
-            <th>Μαρκα Οχηματος</th>
-            <th>Πινακιδα Οχηματος</th>
-            <th>Τυπος Χρηστη</th>
-            <th></th>
+    <center>
+        <form action ="search" method="post" class="form-horizontal">
+            <fieldset>
 
-        </tr>
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="lastname"></label>
+                    <div class="col-md-4">
+                        <input id="afm" name="afm" type="text" placeholder="Enter the owner's surname" class="form-control input-md">
 
-        <#list owners as owner>
-
-            <tr>
-            <td>${owner.afm}</td>
-            <td>${owner.onoma}</td>
-            <td>${owner.epitheto}</td>
-            <td>${owner.dieuthinsi}</td>
-            <td>${owner.email}</td>
-            <td>${owner.markaOximatos}</td>
-            <td>${owner.pinakidaOximatos}</td>
-            <td>${owner.TipoXristi!"User"}</td>
-
-            <td><a href="showUpdate?id=${owner.id}">Update</a></td>
-
-
-            </tr>
-        </#list>
-    </table>
-    <#else>
-    <center> <h5 class="my-4">There are no owners to display!</h5> </center>
-    <div class="col-lg-12">
-        <a href="showCreate">  <img class="rounded-circle img-fluid d-block mx-auto"style="width:50%" src="https://img.icons8.com/material/1600/nothing-found.png" alt=""></a>
-        <p></p>
-    </div>
-    </#if>
-    <br>
+                    </div>
+                </div>
+                <center><input type="submit" value="Search"/></center>
 </div>
 
+</center>
+</fieldset>
+</form>
+</div>
 
 <!-- /.container -->
 
