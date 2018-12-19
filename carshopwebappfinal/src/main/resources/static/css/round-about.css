@@ -17,3 +17,7 @@ body {
 input[type="radio"]{
   margin: 0 15px 0 21px;
 }
+
+.table-striped{
+  font-size: 15px;
+}
