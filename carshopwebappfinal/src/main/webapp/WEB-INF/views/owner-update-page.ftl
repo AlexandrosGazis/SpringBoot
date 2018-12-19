@@ -62,15 +62,15 @@
     </div>
     <table class ="table table-striped">
         <tr>
-            <th>User id</th>
-            <th>ΑΦΜ</th>
-            <th>Ονομα</th>
-            <th>Επιθετο</th>
-            <th>Διευθυνση</th>
-            <th>Email</th>
-            <th>Μαρκα</th>
-            <th>Πινακιδα</th>
-            <th>Τυπος Χρηστη</th>
+            <th>ID</th>
+            <th>AFM</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Address</th>
+            <th>E-mail</th>
+            <th>Brand</th>
+            <th>Plate</th>
+            <th>User Type</th>
             <th></th>
 
         </tr>

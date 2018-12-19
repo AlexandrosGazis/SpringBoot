@@ -53,6 +53,7 @@ public class UsersLoginSecurityConfiguration extends WebSecurityConfigurerAdapte
                 .antMatchers("/updateRepair").hasAnyAuthority( "Admin")
                 .antMatchers("/saveRepair").hasAnyAuthority( "Admin")
                 .antMatchers("/welcomeUser").hasAuthority("User")
+                .antMatchers("/sintelestes").hasAuthority("Admin")
                 .antMatchers("/welcomeAdmin").hasAuthority( "Admin")
                 .anyRequest().authenticated().and().formLogin()
                 .successHandler(loginSecuritySimpleAuthenticationSuccessHandler)
