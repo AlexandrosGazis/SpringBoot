@@ -62,38 +62,45 @@
     <div class="col-lg-12">
         <center> <h2 class="my-4">Repairs</h2> </center>
     </div>
-    <table class ="table table-striped">
-    <tr>
-        <th>Repair id</th>
-        <th>Ημερομηνία</th>
-        <th>Κατάσταση</th>
-        <th>Είδος επισκευής</th>
-        <th>Κόστος</th>
-        <th>Περιγραφή</th>
-        <th></th>
-
-    </tr>
-
-    <#list repairs as repair>
-
+    <#if repairs?size != 0>
+        <table class ="table table-striped">
         <tr>
-
-        <td>${repair.id}</td>
-        <td>${repair.date}</td>
-        <td>${repair.katastasi}</td>
-        <td>${repair.eidosepiskeuis}</td>
-        <td>${repair.kostos}</td>
-        <td>${repair.perigrafi}</td>
-
-
-        <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
+            <th>Repair id</th>
+            <th>Ημερομηνία</th>
+            <th>Κατάσταση</th>
+            <th>Είδος επισκευής</th>
+            <th>Κόστος</th>
+            <th>Περιγραφή</th>
+            <th></th>
 
         </tr>
-    </#list>
+
+        <#list repairs as repair>
+
+            <tr>
+
+            <td>${repair.id}</td>
+            <td>${repair.date}</td>
+            <td>${repair.katastasi}</td>
+            <td>${repair.eidosepiskeuis}</td>
+            <td>${repair.kostos}</td>
+            <td>${repair.perigrafi}</td>
 
 
-</table>
+            <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
 
+            </tr>
+        </#list>
+
+
+        </table>
+    <#else>
+        <center> <h5 class="my-4">There are no repairs to display!</h5> </center>
+        <div class="col-lg-12">
+            <a href="showCreate">  <img class="rounded-circle img-fluid d-block mx-auto"style="width:50%" src="https://img.icons8.com/material/1600/nothing-found.png" alt=""></a>
+            <p></p>
+        </div>
+    </#if>
     <br>
 </div>
 
