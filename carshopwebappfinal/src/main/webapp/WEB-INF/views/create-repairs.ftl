@@ -99,6 +99,7 @@
                             <input type="radio" name="eidosepiskeuis" id="usertype-0" value="Μικρη" checked="checked">
                             Minor
                         </label>
+
                         <label class="radio-inline" for="usertype-1">
                             <input type="radio" name="eidosepiskeuis" id="usertype-1" value="Mεγαλη">
                             Major
