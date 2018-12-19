@@ -12,4 +12,9 @@ body {
   body {
     padding-top: 56px;
   }
+
+}
+
+footer {
+  margin: 50px 0 0 0; /* or just use:  margin-top: 50px;*/
 }
