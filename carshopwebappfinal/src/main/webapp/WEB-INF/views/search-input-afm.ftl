@@ -1,3 +1,4 @@
+<#setting number_format="computer">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -55,27 +56,28 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container">
+<div class="container" style="padding-bottom: 300px;padding-top: 50px;">
     <div class="col-lg-12">
-        <center> <h2 class="my-4">Create a new owner</h2> </center>
+        <center> <h2 class="my-4">Search (AFM)</h2> </center>
     </div>
-    <form action ="search2" method="post" class="form-horizontal">
-        <fieldset>
+    <center>
+        <form action ="search2" method="post" class="form-horizontal">
+            <fieldset>
 
-            <!-- Text input-->
-            <div class="form-group">
-                <label class="col-md-4 control-label" for="lastname">Last Name</label>
-                <div class="col-md-4">
-                    <input id="afm" name="afm" type="text" placeholder="Enter the owner's AFM" class="form-control input-md">
+                <!-- Text input-->
+                <div class="form-group">
+                    <label class="col-md-4 control-label" for="lastname"></label>
+                    <div class="col-md-4">
+                        <input id="afm" name="afm" type="text" placeholder="Enter the owner's AFM" class="form-control input-md">
 
+                    </div>
                 </div>
-            </div>
+                <center><input type="submit" value="Search"/></center>
+</div>
 
-            </div>
-            <input type="submit" value="Search Email to the Database records"/>
-
-        </fieldset>
-    </form>
+</center>
+</fieldset>
+</form>
 </div>
 
 <!-- /.container -->
