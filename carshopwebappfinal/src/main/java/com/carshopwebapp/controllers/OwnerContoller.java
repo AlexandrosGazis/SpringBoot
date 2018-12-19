@@ -41,7 +41,10 @@ public class OwnerContoller {
 
     @RequestMapping("/saveOwn")
     public String saveNewOwner(@ModelAttribute("owner") Owner owner, ModelMap modelMap) { //expose it out a as bean -spring container-
-        Owner userSaved = service.saveOwner(owner);
+        service.createhashPassword(owner);
+        service.updateOwner(owner);
+        service.saveOwner(owner);
+//        Owner userSaved = service.saveOwner(owner);
         //String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + userSaved.getId();
      //   modelMap.addAttribute("msg", msg);
         return "create-owner";  //request modelattribute        //response modelmap (pass key value pairs)

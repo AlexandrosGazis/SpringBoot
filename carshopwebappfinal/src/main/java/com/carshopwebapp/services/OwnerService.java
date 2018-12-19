@@ -22,6 +22,6 @@ public interface OwnerService {
     List<Owner> getOwnersByAfm(String afm) ;
     List<Owner> getOwnersByEmail(String email) ;
 
-
+    Owner createhashPassword(Owner owner);
 
 }

@@ -4,6 +4,7 @@ package com.carshopwebapp.services;
 import com.carshopwebapp.entitities.Owner;
 import com.carshopwebapp.repository.OwnerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -61,5 +62,18 @@ public class OwnerServiceImpl implements OwnerService {
     public List<Owner> getOwnersByEmail(String email) {
         return repository.findOwnersByEmail(email);
     }
+
+    @Override
+    public Owner createhashPassword(Owner owner){
+
+        BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
+        String hashedPassword = passwordEncoder.encode(owner.getKwdikoXristi());
+        owner.setKwdikoXristi(hashedPassword);
+
+        return owner;
+
+    }
+
+
 
 }
