@@ -134,7 +134,7 @@
                 </div>
 
                 <input type="submit" value="Create new Repair"/>
-
+                <br><br>
             </fieldset>
         </form></center>
 
