@@ -97,7 +97,7 @@
     <#else>
         <center> <h5 class="my-4">There are no repairs to display!</h5> </center>
         <div class="col-lg-12">
-            <a href="showCreate">  <img class="rounded-circle img-fluid d-block mx-auto"style="width:50%" src="https://img.icons8.com/material/1600/nothing-found.png" alt=""></a>
+             <img class="rounded-circle img-fluid d-block mx-auto"style="width:50%" src="https://img.icons8.com/material/1600/nothing-found.png" alt="">
             <p></p>
         </div>
     </#if>

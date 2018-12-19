@@ -1,3 +1,4 @@
+<#setting number_format="computer">
 <!DOCTYPE html>
 <html lang="en">
 
@@ -128,7 +129,7 @@
                 </div>
 
                 <input type="submit" value="Create new Repair"/>
-
+                <br><br>
             </fieldset>
         </form></center>
 
