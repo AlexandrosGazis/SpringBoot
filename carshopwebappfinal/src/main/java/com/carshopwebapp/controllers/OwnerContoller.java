@@ -44,10 +44,7 @@ public class OwnerContoller {
         service.createhashPassword(owner);
         service.updateOwner(owner);
         service.saveOwner(owner);
-//        Owner userSaved = service.saveOwner(owner);
-        //String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + userSaved.getId();
-     //   modelMap.addAttribute("msg", msg);
-        return "create-owner";  //request modelattribute        //response modelmap (pass key value pairs)
+        return "create-owner";  //request modelattribute   response modelmap (pass key value pairs)
     }
 
 
@@ -74,8 +71,8 @@ public class OwnerContoller {
         owner = service.getOwnerbyId(id);//get the owner
         service.deleteOwner(owner); //delete the owner
         List<Owner> owners = service.getAllOwners();
-        modelMap.addAttribute("owners", owners);
-        //send response back via modelmap
+        modelMap.addAttribute("owners", owners);        //send response back via modelmap
+
         return "owner-update-page"; //go back to all Records page
     }
 

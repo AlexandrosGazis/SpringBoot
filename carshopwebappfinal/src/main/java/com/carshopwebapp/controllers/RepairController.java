@@ -24,7 +24,6 @@ public class RepairController {
     @Autowired
     RepairService service;
 
-    Logger logger = LoggerFactory.getLogger(RepairController.class); //deelete
 
 
     @RequestMapping("/RepairPages")
@@ -60,7 +59,6 @@ public class RepairController {
         //model map for when we get back to the jsp
         Repair repair = service.getRepairbyId(id);
         modelMap.addAttribute("repair", repair);
-       // service.getfindByIdEquals(1);
         return "update-repairs";
     }
 
@@ -80,30 +78,22 @@ public class RepairController {
         repair = service.getRepairbyId(id);//get the repair
         service.deleteRepair(repair); //delete the repair
         List<Repair> repairs = service.getAllRepairs();
-        modelMap.addAttribute("repairs", repairs);
-
-        //send response back via modelmap
+        modelMap.addAttribute("repairs", repairs);   //send response back via modelmap
         return "repair-update-page"; //go back to all Records page
     }
-
-
 
 
     @RequestMapping("/LastRepairs")
     public String searchAdminInfo(@ModelAttribute("repair") Repair repair, ModelMap modelMap) {
         DateFormat dateFormat = new SimpleDateFormat("YYYY-MM-dd");
-        String formattedDate=dateFormat.format(new Date());
-     //   System.out.println("+++++++" + formattedDate);
-        //logger.info("aaaaaaaaaaaaaaaaaa"+service.getFirst10Repairs(formattedDate).toString());
+        String formattedDate = dateFormat.format(new Date());
         List<Repair> repairs = service.getFirst10Repairs(formattedDate);
         modelMap.addAttribute("repairs", repairs);
-       // String msg = "Επιτυχης εισαγωγη δεδομενων με id: " + service.getFirst10Repairs(formattedDate).toString();
-        //System.out.println(service2.getfindByIdEquals(2));
-        // logger.info(service.getfindByIdEquals(1).toString());
+
         return "repair-last-dates";
     }
 
-    }
+}
 
 
 

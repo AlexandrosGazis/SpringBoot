@@ -18,8 +18,7 @@ import java.util.List;
 
 @Controller
 
-//public class LoginController implements AuthenticationSuccessHandler {
-    public class LoginController {
+public class LoginController {
 
 
     @Autowired
@@ -29,39 +28,18 @@ import java.util.List;
 
     @RequestMapping("/welcomeUser")
     public ModelAndView helloUser(ModelMap modelMap) {
-        String username = SecurityContextHolder.getContext().getAuthentication().getName();
-        System.out.println(username);
-        //Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        //String currentPrincipalName = authentication.getName();
-
-       // logger.info(currentPrincipalName);
-       // System.out.println("\n\n======="+currentPrincipalName+ "=======\n\n");
-       List<Owner> owners = service.getOwnersByEmail(username);
+        String username = SecurityContextHolder.getContext().getAuthentication().getName();// System.out.println(username);
+        List<Owner> owners = service.getOwnersByEmail(username);
         System.out.println(owners);
         int idOwner = owners.get(0).getId();
-        //System.out.println("AAAAAAAA"+idOwner);
-
-        // owners.
-       //int idOwner = 1;
-
         List<Repair> repairs = service2.getfindByIdEquals(idOwner);
-
         String msg = " " + username;
-       // System.out.println(service.getOwnersByEmail(currentPrincipalName)); //delete
         modelMap.addAttribute("repairs", repairs);
-        //System.out.println(service2.getfindByIdEquals(2));
-        // logger.info(service.getfindByIdEquals(1).toString());
-       modelMap.addAttribute("msg", msg);
+
+        modelMap.addAttribute("msg", msg);
         return new ModelAndView("welcome-user");
     }
 
-
-   // @RequestMapping("/welcomeAdmin")
-  //  public ModelAndView helloAdmin() {
-   ///     String username = SecurityContextHolder.getContext().getAuthentication().getName();
-   //     return new ModelAndView("welcome-admin");
-  //  }
-
-    }
+}
 
 

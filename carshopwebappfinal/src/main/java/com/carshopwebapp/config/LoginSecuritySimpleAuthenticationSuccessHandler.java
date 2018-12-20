@@ -38,19 +38,22 @@ public class LoginSecuritySimpleAuthenticationSuccessHandler implements Authenti
                     redirectStrategy.sendRedirect(request, response, USER_HOME_PAGE_URL);
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
-                    e.printStackTrace();
-                    System.out.println("Check out this error1");
+                    //e.printStackTrace();
+                    // System.out.println("Check out this error1");
+                    System.out.println("");
                 }
             } else if (authority.getAuthority().equals("Admin")) {
                 try {
                     redirectStrategy.sendRedirect(request, response, ADMIN_HOME_PAGE_URL);
                 } catch (Exception e) {
                     // TODO Auto-generated catch block
-                    e.printStackTrace();
-                    System.out.println("Check out this error2");
+                    //e.printStackTrace();
+                    //System.out.println("Check out this error2");
+                    System.out.println("");
                 }
             } else {
-                System.out.println("Check out this error3");
+                //System.out.println("Check out this error3");
+                System.out.println("");
                 throw new IllegalStateException();
 
             }

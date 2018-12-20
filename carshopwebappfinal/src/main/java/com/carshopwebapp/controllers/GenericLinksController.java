@@ -27,7 +27,7 @@ public class GenericLinksController {
     @Autowired
     RepairService service2;
 
-    Logger logger = LoggerFactory.getLogger(RepairController.class);
+    // Logger logger = LoggerFactory.getLogger(RepairController.class);
 
 
     @RequestMapping("/")
@@ -77,24 +77,4 @@ public class GenericLinksController {
         return "registration-done";
     }    //http://localhost:8000/carshopwebapp/search2?afm=ASE-2934
 
-
-
-/*
-    @RequestMapping("/welcomeUser2")
-    public String searchUserInfo(ModelMap modelMap) {
-        Authentication authentication = SecurityContextHolder.getContext().getAuthentication();
-        String currentPrincipalName = authentication.getName();
-
-        int idOfusername = service.getOwnersBySurname(currentPrincipalName).get(0).getId();
-
-        logger.info("\n\nId of the user(username login):" + currentPrincipalName + " in our db is:" + Integer.toString(idOfusername));
-        List<Repair> repairs = service2.getfindByIdEquals(idOfusername);
-        String msg = " " + currentPrincipalName;
-        modelMap.addAttribute("repairs", repairs);
-        modelMap.addAttribute("msg", msg);
-        //service.ge
-        return "welcome-user2";
-    }
-
-*/
 }

@@ -2,7 +2,9 @@ package com.carshopwebapp.entitities;
 
 
 import javax.persistence.*;
- import  com.carshopwebapp.entitities.Owner;
+
+import com.carshopwebapp.entitities.Owner;
+
 @Entity
 @Table(name = "repair")
 public class Repair {
@@ -31,14 +33,8 @@ public class Repair {
     private String perigrafi;
 
     @OneToOne
-   /// @JoinColumn(
-   //         name = "userOwner_id",
-   ///         referencedColumnName = "owneruser")
-    //@JoinColumn(name = "userOwner_id", table = "owneruser")
-    //@Column(name = "userOwner_id")
     @JoinColumn(name = "id")
     private Owner ownerFullObject;
-
 
 
     public Owner getOwnerFullObject() {

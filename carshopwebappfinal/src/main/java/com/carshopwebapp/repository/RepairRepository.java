@@ -6,10 +6,8 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;
 
 public interface RepairRepository extends JpaRepository<Repair, Integer> {
-    //be carefull for the owner to import the correct package
-    //<..., Integer> due to the Location.class @id which is int ;)
+    List<Repair> findByIdEquals(int id); //delete it was used for login in memory altered method
 
-    List<Repair>  findByIdEquals(int id); //delete it was used for login in memory altered method
     List<Repair> findTop10ByDateLike(String date);
 
 }

@@ -20,12 +20,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
 
     @Override
     public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
-        // here we would search into the repo for the user.
-        // for not we are just going to send always a successful response.
         Owner owner = ownerRepository.findByEmail(email);
 
-/*        List<SimpleGrantedAuthority> authorization = Collections.singletonList(new SimpleGrantedAuthority("ADMIN"));
-        CharSequence password = "password";*/
 
         return new LoginResponse(owner.getEmail(), owner.getKwdikoXristi(), Arrays.asList(new SimpleGrantedAuthority(owner.getTipoXristi())));
 

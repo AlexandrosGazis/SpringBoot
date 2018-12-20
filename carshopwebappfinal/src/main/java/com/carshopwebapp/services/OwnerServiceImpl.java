@@ -15,7 +15,6 @@ public class OwnerServiceImpl implements OwnerService {
 
     @Autowired
     private OwnerRepository repository;//add the dependency
-    //create getter+setter for repository to be able to use i
 
     public OwnerRepository getRepository() {
         return repository;
@@ -54,17 +53,19 @@ public class OwnerServiceImpl implements OwnerService {
     public List<Owner> getOwnersBySurname(String surname) {
         return repository.findByEpitheto(surname);
     }
+
     @Override
     public List<Owner> getOwnersByAfm(String afm) {
         return repository.findOwnersByAfm(afm);
     }
+
     @Override
     public List<Owner> getOwnersByEmail(String email) {
         return repository.findOwnersByEmail(email);
     }
 
     @Override
-    public Owner createhashPassword(Owner owner){
+    public Owner createhashPassword(Owner owner) {
 
         BCryptPasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
         String hashedPassword = passwordEncoder.encode(owner.getKwdikoXristi());
@@ -73,7 +74,6 @@ public class OwnerServiceImpl implements OwnerService {
         return owner;
 
     }
-
 
 
 }

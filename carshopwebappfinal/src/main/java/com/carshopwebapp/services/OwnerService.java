@@ -7,7 +7,6 @@ import java.util.List;
 public interface OwnerService {
 
 
-    //save,update,delete, get location by id
     Owner saveOwner(Owner owner); //new owner
 
     Owner updateOwner(Owner owner); //update owner
@@ -19,8 +18,10 @@ public interface OwnerService {
     List<Owner> getAllOwners();
 
     List<Owner> getOwnersBySurname(String surname);
-    List<Owner> getOwnersByAfm(String afm) ;
-    List<Owner> getOwnersByEmail(String email) ;
+
+    List<Owner> getOwnersByAfm(String afm);
+
+    List<Owner> getOwnersByEmail(String email);
 
     Owner createhashPassword(Owner owner);
 
