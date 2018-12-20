@@ -119,15 +119,6 @@
 
                 <!-- Text input-->
                 <div class="form-group">
-                    <label class="col-md-4 control-label" for="email">Owner</label>
-                    <div class="col-md-4">
-                        <input id="email" name="owner" type="text" placeholder="Enter the owner's name" class="form-control input-md">
-
-                    </div>
-                </div>
-
-                <!-- Text input-->
-                <div class="form-group">
                     <label class="col-md-4 control-label" for="brand">Details</label>
                     <div class="col-md-4">
                         <input id="brand" name="perigrafi" type="text" placeholder="Enter the details of the repair" class="form-control input-md">

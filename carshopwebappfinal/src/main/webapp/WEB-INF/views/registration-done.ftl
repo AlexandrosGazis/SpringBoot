@@ -63,15 +63,15 @@
     <#if owners?size != 0>
         <table class ="table table-striped">
         <tr>
-            <th>User id</th>
-            <th>ΑΦΜ</th>
-            <th>Ονομα</th>
-            <th>Επιθετο</th>
-            <th>Διευθυνση</th>
-            <th>Email</th>
-            <th>Μαρκα Οχηματος</th>
-            <th>Πινακιδα Οχηματος</th>
-            <th>Τυπος Χρηστη</th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
             <th></th>
 
         </tr>

@@ -70,7 +70,6 @@
             <th>E-mail</th>
             <th>Brand</th>
             <th>Plate</th>
-            <th>User Type</th>
             <th></th>
 
         </tr>
@@ -87,7 +86,6 @@
             <td>${owner.email}</td>
             <td>${owner.markaOximatos}</td>
             <td>${owner.pinakidaOximatos}</td>
-            <td>${owner.TipoXristi!"User"}</td>
 
             <td><a href="showUpdate?id=${owner.id}">Update</a></td>
 
