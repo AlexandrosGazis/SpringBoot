@@ -69,7 +69,6 @@
             <th>Status</th>
             <th>Repair Type</th>
             <th>Cost</th>
-            <th>Owner (service)</th>
             <th>Details</th>
             <th></th>
 
@@ -84,7 +83,6 @@
             <td>${repair.katastasi}</td>
             <td>${repair.eidosepiskeuis}</td>
             <td>${repair.kostos}</td>
-            <td>${repair.owner}</td>
             <td>${repair.perigrafi}</td>
 
             <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
