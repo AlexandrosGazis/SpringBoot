@@ -3,7 +3,11 @@
 The aim of this repository is to learn **Spring Boot** and develop a CRUD application regarding a Car Repair Shop so as to deeply understand design patterns regarding the 3-tier Architecture used by this MVC framework.
 
 
-During server's startup, Spring Boot will automatically load 20 tuples of dummy data for each table so as to adequately Unit Test the application. When the server's proccess is terminated all data will be deleted automatically ([Spring Boot Documentation: Database Initialization](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html)).
+During server's startup, in the application.properties(/src/main/resources) file change the 25th line:
+
+``spring.jpa.hibernate.ddl-auto= none `` to ``spring.jpa.hibernate.ddl-auto= create-drop ``
+
+if you wish to disable Spring Boot from automatically loading 20 tuples of dummy data for each table so as to adequately Unit Test the application. When the server's proccess is terminated all data will be deleted automatically ([Spring Boot Documentation: Database Initialization](https://docs.spring.io/spring-boot/docs/current/reference/html/howto-database-initialization.html)).
 
 After importing the project, simply fire up your server (tomcat's port is set to 8000) and click the following:
 
@@ -63,6 +67,9 @@ The index page consists of the following:
 	b. For a user's AFM (National Insurance number) display all available db records
 	
 	c. For a user's Email Adress display all available db records
+	
+-Search the Database for the last 10 Repairs of the (current) day
+
 	
 	
 The project was developed in collaboration with: [Giorgos Anagnostakis](https://github.com/GiorgosAnagnostakis),  [Kostas Beroukas](https://github.com/KostasGit) and [Katerina Manioudaki](https://github.com/katerinaeks).
