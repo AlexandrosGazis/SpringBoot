@@ -71,6 +71,7 @@
             <th>Cost</th>
             <th>Details</th>
             <th></th>
+            <th></th>
 
         </tr>
 
@@ -86,6 +87,7 @@
             <td>${repair.perigrafi}</td>
 
             <td><a href="showUpdateRepair?id=${repair.id}">Update</a></td>
+            <td><a href="deleteRepair?id=${repair.id}">Delete</a></td>
 
 
             </tr>

@@ -71,6 +71,7 @@
             <th>Brand</th>
             <th>Plate</th>
             <th></th>
+            <th></th>
 
         </tr>
 
@@ -88,6 +89,7 @@
             <td>${owner.pinakidaOximatos}</td>
 
             <td><a href="showUpdate?id=${owner.id}">Update</a></td>
+            <td><a href="deleteOwner?id=${owner.id}">Delete</a></td>
 
 
             </tr>
