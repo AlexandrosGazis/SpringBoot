@@ -1,4 +1,4 @@
-# SpringBoot Applications
+# SpringBoot Application
 
 The aim of this repository is to learn **Spring Boot** and develop a CRUD application regarding a Car Repair Shop so as to deeply understand design patterns regarding the 3-tier Architecture used by this MVC framework.
 
