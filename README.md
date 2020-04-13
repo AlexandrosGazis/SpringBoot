@@ -72,5 +72,5 @@ The index page consists of the following:
 
 	
 	
-The project was developed in collaboration with: [Giorgos Anagnostakis](https://github.com/GiorgosAnagnostakis),  [Kostas Beroukas](https://github.com/KostasGit) and [Katerina Manioudaki](https://github.com/katerinaeks).
+The project was developed in collaboration with: [Alexandros Gazis](https://github.com/AlexandrosGazis),  [Kostas Beroukas](https://github.com/KostasGit), [Giorgos Anagnostakis](https://github.com/GiorgosAnagnostakis),  [Kostas Beroukas](https://github.com/KostasGit) and [Katerina Manioudaki](https://github.com/katerinaeks).
 
